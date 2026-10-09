@@ -1,0 +1,25 @@
+{
+  "contract_version": 2,
+  "asset_id": "future-field",
+  "asset_class": "AUTHORITATIVE",
+  "schema_id": "prototype.field",
+  "schema_version": 1,
+  "producer_model_id": "future-model",
+  "algorithm_version": "2.0",
+  "world_identity": "world-future",
+  "layer_release_id": "layer-future",
+  "direct_dependencies": [],
+  "semantic_content_hash": "future-semantic-hash",
+  "encoded_byte_hash": "future-byte-hash",
+  "spatial_coverage": {
+    "frame_id": "future-frame",
+    "face": null,
+    "level": null,
+    "tile_keys": []
+  },
+  "support_scale": null,
+  "units": null,
+  "capability": "AVAILABLE",
+  "created_by_run_id": "future-run",
+  "attributes": {}
+}

@@ -1,0 +1,12 @@
+{
+  "fixture_id": "E2F07",
+  "schema": "E2-FIXTURE-v1",
+  "admission": {
+    "FIXED_TEST": "ADMITTED",
+    "DIAGNOSTIC": "DIAGNOSTIC_ONLY",
+    "STANDARD_GLOBAL": "REJECTED",
+    "REGIONAL_REFINEMENT": "REJECTED"
+  },
+  "reference_radius_metres": 6371000,
+  "sea_level_relation": "SEPARATE_NOT_AVAILABLE"
+}

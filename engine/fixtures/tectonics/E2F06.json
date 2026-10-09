@@ -1,0 +1,12 @@
+{
+  "fixture_id": "E2F06",
+  "schema": "E2-FIXTURE-v1",
+  "quantization_micrometres_per_year": 1,
+  "deadband_micrometres_per_year": 5000,
+  "cases": [
+    { "normal": -5001, "tangent": 0, "expected": "CONVERGENT" },
+    { "normal": 5001, "tangent": 0, "expected": "DIVERGENT" },
+    { "normal": 5000, "tangent": -5000, "expected": "STABLE" },
+    { "normal": 0, "tangent": 5001, "expected": "UNRESOLVED" }
+  ]
+}

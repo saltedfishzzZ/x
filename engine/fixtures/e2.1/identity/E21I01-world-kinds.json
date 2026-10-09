@@ -1,0 +1,8 @@
+{
+  "fixture_id": "E21-I01",
+  "schema": "e2.1-world-kinds-fixture-v1",
+  "seed": "E21-IDENTITY-01",
+  "fixed_fixture_id": "PV01-E2.1-v2",
+  "fixed_fixture_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+  "expect_distinct_world_ids": true
+}

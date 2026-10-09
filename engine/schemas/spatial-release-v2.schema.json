@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "planet-engine/spatial-release-v2",
+  "title": "SpatialReleaseManifestV2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "spatial_release_id",
+    "identity_format_version",
+    "spatial_reference",
+    "patches",
+    "capabilities",
+    "direct_dependencies"
+  ],
+  "properties": {
+    "schema": { "const": "spatial-release-v2" },
+    "spatial_release_id": { "$ref": "#/$defs/safeId" },
+    "identity_format_version": { "const": "cs1" },
+    "spatial_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["frame_id", "radius_metres", "global_level", "maximum_identity_level"],
+      "properties": {
+        "frame_id": { "const": "cubed-sphere-equiangular-v1" },
+        "radius_metres": { "type": "integer", "minimum": 1 },
+        "global_level": { "type": "integer", "minimum": 0, "maximum": 30 },
+        "maximum_identity_level": { "type": "integer", "minimum": 0, "maximum": 30 }
+      }
+    },
+    "patches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["patch_id", "request", "leaf_cells", "derived_regions", "refinement_policy", "halo_policy"],
+        "properties": {
+          "patch_id": { "$ref": "#/$defs/safeId" },
+          "request": { "type": "object" },
+          "leaf_cells": { "type": "array", "items": { "type": "string" } },
+          "derived_regions": { "type": "object" },
+          "refinement_policy": { "$ref": "#/$defs/safeId" },
+          "halo_policy": { "$ref": "#/$defs/safeId" }
+        }
+      }
+    },
+    "capabilities": { "type": "object" },
+    "direct_dependencies": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/releaseRef" }
+    }
+  },
+  "$defs": {
+    "safeId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+    },
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "releaseRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["release_id", "manifest_sha256"],
+      "properties": {
+        "release_id": { "$ref": "#/$defs/safeId" },
+        "manifest_sha256": { "$ref": "#/$defs/sha256" }
+      }
+    }
+  }
+}

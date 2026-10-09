@@ -1,0 +1,14 @@
+{
+  "report_schema": "T0-E1-CROSS-PLATFORM-COMPARISON-v1",
+  "status": "CROSS_PLATFORM_PASS",
+  "first": "reports/e1/platform-darwin-arm64.json",
+  "second": "reports/e1/platform-windows-amd64.json",
+  "comparisons": {
+    "both_platform_pass": true,
+    "report_schema": true,
+    "deterministic_evidence": true,
+    "deterministic_evidence_sha256": true,
+    "test_counts": true
+  },
+  "toolchain_versions_are_informational": true
+}

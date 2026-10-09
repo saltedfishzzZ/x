@@ -1,0 +1,15 @@
+{
+  "fixture_id": "PVAL-E2-v1",
+  "schema": "E2-SEED-SET-v1",
+  "purpose": "VALIDATION",
+  "seeds": [
+    "PVAL-E2-01", "PVAL-E2-02", "PVAL-E2-03", "PVAL-E2-04",
+    "PVAL-E2-05", "PVAL-E2-06", "PVAL-E2-07", "PVAL-E2-08",
+    "PVAL-E2-09", "PVAL-E2-10", "PVAL-E2-11", "PVAL-E2-12",
+    "PVAL-E2-13", "PVAL-E2-14", "PVAL-E2-15", "PVAL-E2-16",
+    "PVAL-E2-17", "PVAL-E2-18", "PVAL-E2-19", "PVAL-E2-20",
+    "PVAL-E2-21", "PVAL-E2-22", "PVAL-E2-23", "PVAL-E2-24",
+    "PVAL-E2-25", "PVAL-E2-26", "PVAL-E2-27", "PVAL-E2-28",
+    "PVAL-E2-29", "PVAL-E2-30", "PVAL-E2-31", "PVAL-E2-32"
+  ]
+}

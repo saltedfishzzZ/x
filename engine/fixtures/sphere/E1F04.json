@@ -1,0 +1,7 @@
+{
+  "id": "E1F04",
+  "purpose": "父子面积、边分段和真面积聚合权重",
+  "parents": ["cs1/F0/L0/", "cs1/F3/L3/222", "cs1/F4/L8/12231320"],
+  "relative_tolerance": 1e-12,
+  "expected_child_count_at_delta_2": 16
+}

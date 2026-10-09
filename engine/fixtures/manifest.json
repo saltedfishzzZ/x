@@ -1,0 +1,181 @@
+{
+  "fixture_set": "T0-E2-v1",
+  "status": "E2_IMPLEMENTING",
+  "fixtures": [
+    {
+      "id": "PF01",
+      "path": "analytic/PF01.json",
+      "purpose": "constant sphere"
+    },
+    {
+      "id": "PF03",
+      "path": "analytic/PF03.json",
+      "purpose": "analytic depression and capacity"
+    },
+    {
+      "id": "PF04",
+      "path": "analytic/PF04.json",
+      "purpose": "saddle topology"
+    },
+    {
+      "id": "PF05",
+      "path": "analytic/PF05.json",
+      "purpose": "flat region preservation"
+    },
+    {
+      "id": "PF06",
+      "path": "analytic/PF06.json",
+      "purpose": "nested basins and equal thresholds"
+    },
+    {
+      "id": "PF07",
+      "path": "analytic/PF07.json",
+      "purpose": "cross-face direction"
+    },
+    {
+      "id": "PF08",
+      "path": "analytic/PF08.json",
+      "purpose": "local patch aggregation"
+    },
+    {
+      "id": "PI04",
+      "path": "injected-failures/PI04.json",
+      "purpose": "non-monotonic capacity rejection"
+    },
+    {
+      "id": "EC01-V0",
+      "path": "contracts/asset-header-v0.json",
+      "purpose": "legacy asset-header migration"
+    },
+    {
+      "id": "EC01-V1",
+      "path": "contracts/asset-header-v1.json",
+      "purpose": "current asset-header decoding"
+    },
+    {
+      "id": "EC01-V2",
+      "path": "contracts/asset-header-v2-unsupported.json",
+      "purpose": "future asset-header rejection"
+    },
+    {
+      "id": "E1F01",
+      "path": "sphere/E1F01.json",
+      "purpose": "canonical face and seam ownership"
+    },
+    {
+      "id": "E1F02",
+      "path": "sphere/E1F02.json",
+      "purpose": "CellId encoding and bounds"
+    },
+    {
+      "id": "E1F03",
+      "path": "sphere/E1F03.json",
+      "purpose": "cross-face edge and vertex topology"
+    },
+    {
+      "id": "E1F04",
+      "path": "sphere/E1F04.json",
+      "purpose": "parent-child area aggregation"
+    },
+    {
+      "id": "E1F05",
+      "path": "sphere/E1F05.json",
+      "purpose": "cross-face cap coverage"
+    },
+    {
+      "id": "E1F06",
+      "path": "sphere/E1F06.json",
+      "purpose": "L8/L10 balanced patch"
+    },
+    {
+      "id": "E1F07",
+      "path": "sphere/E1F07.json",
+      "purpose": "cube rotation invariants"
+    },
+    {
+      "id": "E1F08",
+      "path": "sphere/E1F08.json",
+      "purpose": "invalid input boundaries"
+    },
+    {
+      "id": "PI01",
+      "path": "injected-failures/PI01.json",
+      "purpose": "cross-face corruption rejection"
+    },
+    {
+      "id": "E2F01",
+      "path": "tectonics/E2F01.json",
+      "purpose": "world and seed identity vectors"
+    },
+    {
+      "id": "E2F02",
+      "path": "tectonics/E2F02.json",
+      "purpose": "named random fixed vector"
+    },
+    {
+      "id": "E2F03",
+      "path": "tectonics/E2F03.json",
+      "purpose": "L8 domain constraints"
+    },
+    {
+      "id": "E2F04",
+      "path": "tectonics/E2F04.json",
+      "purpose": "boundary graph constraints"
+    },
+    {
+      "id": "E2F05",
+      "path": "tectonics/E2F05.json",
+      "purpose": "Euler speed analytic vector"
+    },
+    {
+      "id": "E2F06",
+      "path": "tectonics/E2F06.json",
+      "purpose": "integer classification deadband"
+    },
+    {
+      "id": "E2F07",
+      "path": "tectonics/E2F07.json",
+      "purpose": "M1 admission and vertical datum"
+    },
+    {
+      "id": "E2F08",
+      "path": "tectonics/E2F08.json",
+      "purpose": "immutable release rejection"
+    },
+    {
+      "id": "PV01-E2-v1",
+      "path": "tectonics/PV01-E2-v1.json",
+      "purpose": "fixed six-plate validation world"
+    },
+    {
+      "id": "PCAL-E2-v1",
+      "path": "tectonics/PCAL-E2-v1.json",
+      "purpose": "32 calibration seeds"
+    },
+    {
+      "id": "PVAL-E2-v1",
+      "path": "tectonics/PVAL-E2-v1.json",
+      "purpose": "32 independent validation seeds"
+    },
+    {
+      "id": "E2I01",
+      "path": "injected-failures/E2I01.json",
+      "purpose": "invalid owner rejection"
+    },
+    {
+      "id": "E2I02",
+      "path": "injected-failures/E2I02.json",
+      "purpose": "boundary corruption rejection"
+    },
+    {
+      "id": "E2I03",
+      "path": "injected-failures/E2I03.json",
+      "purpose": "tectonic hash mismatch rejection"
+    },
+    {
+      "id": "E2I04",
+      "path": "injected-failures/E2I04.json",
+      "purpose": "Oracle isolation rejection"
+    }
+  ]
+}

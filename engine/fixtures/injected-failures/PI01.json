@@ -1,0 +1,8 @@
+{
+  "id": "PI01",
+  "purpose": "跨面邻接被错误改指向相对面时必须拒绝",
+  "source_cell": "cs1/F0/L0/",
+  "source_edge": "West",
+  "injected_target_cell": "cs1/F1/L0/",
+  "expected_status": "REJECTED"
+}

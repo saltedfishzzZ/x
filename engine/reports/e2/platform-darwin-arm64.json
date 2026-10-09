@@ -1,0 +1,226 @@
+{
+  "report_schema": "E2-PLATFORM-REPORT-v1",
+  "status": "PLATFORM_PASS",
+  "generated_at_utc": "2026-10-08T09:18:43.640638+00:00",
+  "platform": {
+    "system": "Darwin",
+    "release": "24.5.0",
+    "machine": "arm64",
+    "python_implementation": "CPython"
+  },
+  "toolchain": {
+    "rustc": "rustc 1.90.0 (1159e78c4 2025-09-14)",
+    "cargo": "cargo 1.90.0 (840b83a10 2025-07-30)",
+    "python": "3.13.14"
+  },
+  "source_tree_sha256": "94fd53c3f05c2e26827e357a5e08f4c9e5a8d0908425c643572987cd9c5069d1",
+  "counts": {
+    "rust_tests": 60,
+    "python_oracle_tests": 10,
+    "json_fixtures": 36
+  },
+  "gates": {
+    "E2-G01": "PASS",
+    "E2-G02": "PASS",
+    "E2-G03": "PASS",
+    "E2-G04": "PASS",
+    "E2-G05": "PASS",
+    "E2-G06": "PASS",
+    "E2-G07": "PASS",
+    "E2-G08": "PASS",
+    "E2-G09": "PASS",
+    "E2-G10": "PASS",
+    "E2-G11": "PASS",
+    "E2-G12": "PASS",
+    "E2-G13": "PASS",
+    "E2-G14": "PASS",
+    "E2-G15": "PASS",
+    "E2-G16": "PASS",
+    "E2-G17": "PLATFORM_EVIDENCE_READY"
+  },
+  "authoritative_evidence": {
+    "conformance": {
+      "boundary_component_count": 12,
+      "boundary_edge_count": 3078,
+      "discrete_digest": "1cc2d9bb8ee39b7f124139e3752af491f56dcc7b6c25d567f06b84a2146ec9f8",
+      "generation_attempt": 1,
+      "owner_count": 393216,
+      "plate_count": 6,
+      "qualifications": {
+        "CONVERGENT": 959,
+        "DIVERGENT": 1646,
+        "STABLE": 256,
+        "UNRESOLVED": 217
+      },
+      "world_id": "world-053ac0d3d275e96f10a6a143"
+    },
+    "m1_admission": "ADMITTED",
+    "m1_release_sha256": "ba0a0f0b3aea1f91aac24fd62be75a4854191bd5cdaf802e19622ce47cb8c8fa",
+    "owners_sha256": "a078f390a057c7c7aad0797db814aad40cfb03401d6ff630ad80d929092dd64b",
+    "pval_evidence_sha256": "a91032971a3505f6e736dd22db9c4b8af777a640f7d1692e21da45e1cc9d2cab",
+    "pv01_qualifications": {
+      "DIVERGENT": 1646,
+      "UNRESOLVED": 217,
+      "CONVERGENT": 959,
+      "STABLE": 256
+    },
+    "tectonic_manifest_sha256": "e8eb899842a507db7b600d1d009b7e265f2a1c74d9cd0ca8da11f6cb2a3c7448",
+    "world_identity": {
+      "generation_identity": "generation-38b03b9e2e45471bd58e7e36",
+      "seed_key": "ec2a01a43513f16acb9dd774655b616521be87b6d1cd8cca57d2387ba9a6b15f",
+      "world_id": "world-053ac0d3d275e96f10a6a143"
+    }
+  },
+  "authoritative_evidence_sha256": "063e75b247b3ecb3831af09a5920522361bd804dba71568ce51e0a151ce19847",
+  "performance": {
+    "detail_queries": {
+      "count": 10000,
+      "pass": true,
+      "seconds": 0.000501333
+    },
+    "estimated_resident_upper_bound_bytes": 15800576,
+    "evidence_sha256": "a91032971a3505f6e736dd22db9c4b8af777a640f7d1692e21da45e1cc9d2cab",
+    "maximum_generation_attempt": 1,
+    "owner_queries": {
+      "count": 100000,
+      "pass": true,
+      "seconds": 0.000344708
+    },
+    "pval": {
+      "count": 32,
+      "pass": true,
+      "seconds": 8.507537292
+    }
+  },
+  "release_package_bytes": 3299428,
+  "checks": [
+    {
+      "name": "python-version",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.0,
+      "output_sha256": "ae19a0c1f63256d308de32b270d675d7ea3b910dd26aeda436732701aaede747",
+      "output": "3.13.14"
+    },
+    {
+      "name": "cargo-fmt",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.217175,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": ""
+    },
+    {
+      "name": "cargo-clippy",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.228953,
+      "output_sha256": "4cf86278c1e6d659943a46a3d7e3da429ac15be90f0f17742e24ef85228e7d3e",
+      "output": "    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.11s\n"
+    },
+    {
+      "name": "cargo-test-release",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 1.821212,
+      "output_sha256": "ae99f034d1a102cdbfd29d5794c53a1ba756d9ed3d902e0cad4a814755b04c1a",
+      "output": "\nrunning 4 tests\ntest tests::dry_below_minimum_and_full_above_maximum ... ok\ntest tests::capacity_curve_is_monotone ... ok\ntest tests::half_level_matches_analytic_subtriangle ... ok\ntest tests::injected_non_monotonicity_is_rejected ... ok\n\ntest result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 4 tests\ntest tests::named_random_is_order_independent_and_stream_isolated ... ok\ntest tests::spherical_basis_has_expected_low_order_values ... ok\ntest tests::stable_sum_ignores_input_order ... ok\ntest tests::named_values_reduce_identically_with_one_two_or_four_workers ... ok\n\ntest result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 5 tests\ntest tests::lossless_compression_does_not_change_semantic_bytes ... ok\ntest tests::interrupted_candidate_is_not_a_release ... ok\ntest tests::legacy_header_verifies_with_pre_migration_semantics ... ok\ntest tests::byte_tampering_is_detected ... ok\ntest tests::field_round_trip_and_atomic_commit ... ok\n\ntest result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 15 tests\ntest e1_g04_non_boundary_face_mapping_round_trip ... ok\ntest e1_f08_rejects_invalid_levels_radii_caps_and_patch_budgets ... ok\ntest e1_g01_child_order_is_southwest_southeast_northwest_northeast ... ok\ntest e1_g03_unit_vector_contract_and_invalid_inputs ... ok\ntest e1_g02_cube_corner_has_three_incident_cells ... ok\ntest e1_g04_ties_use_x_then_y_then_z ... ok\ntest e1_g06_children_preserve_parent_area ... ok\ntest e1_g07_tangent_frame_is_orthonormal_and_right_handed ... ok\ntest e1_g08_cube_rotations_preserve_cell_area ... ok\ntest e1_g10_patch_has_three_scales_and_area_weights ... ok\ntest e1_g11_patch_signature_is_input_order_independent ... ok\ntest e1_g09_cap_cover_is_sorted_unique_and_contains_sampled_points ... ok\ntest e1_g01_identity_round_trip_parent_child_and_no_sample_collision ... ok\ntest e1_g02_all_l4_neighbours_are_reciprocal_with_shared_edges ... ok\ntest e1_g05_l8_global_area_closes ... ok\n\ntest result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 5 tests\ntest e1_f08_rejects_path_like_release_identity ... ok\ntest e1_g13_injected_cross_face_corruption_is_rejected ... ok\ntest e1_g14_noncanonical_manifest_is_rejected_even_with_matching_hash ... ok\ntest e1_g14_manifest_byte_tampering_is_rejected ... ok\ntest e1_g14_publish_open_and_immutable_identity ... ok\n\ntest result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s\n\n\nrunning 4 tests\ntest tests::classification_respects_the_integer_deadband ... ok\ntest tests::small_partition_is_complete_connected_and_queryable ... ok\ntest tests::pv01_uses_fixed_six_plate_input ... ok\ntest tests::pv01_input_order_and_six_rotations_preserve_physical_relations ... ok\n\ntest result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.88s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 2 tests\ntest tests::injected_owner_and_boundary_corruption_are_rejected ... ok\ntest tests::pv01_publish_open_and_owner_tampering_rejection ... ok\n\ntest result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.47s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 3 tests\ntest tests::path_like_namespace_is_rejected ... ok\ntest tests::run_plan_is_separate_from_generation_identity ... ok\ntest tests::e2_admission_matrix_and_oracle_isolation_hold ... ok\n\ntest result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s\n\n\nrunning 3 tests\ntest tests::equal_minima_stay_distinct_without_an_edge ... ok\ntest tests::saddle_merges_two_lower_components ... ok\ntest tests::flat_plateau_remains_one_region ... ok\n\ntest result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 10 tests\ntest tests::canonical_json_preserves_unicode_scalar_sequence ... ok\ntest tests::canonical_json_extreme_exponents_are_stable ... ok\ntest tests::canonical_json_normalizes_negative_zero ... ok\ntest tests::canonical_json_recursively_ignores_hash_map_insertion_order ... ok\ntest tests::canonical_json_rejects_non_finite_numbers ... ok\ntest tests::canonical_map_order_is_stable ... ok\ntest tests::current_asset_header_reads_without_migration ... ok\ntest tests::dependencies_must_be_sorted ... ok\ntest tests::future_asset_header_version_is_rejected ... ok\ntest tests::legacy_asset_header_migrates_without_changing_semantic_identity ... ok\n\ntest result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 5 tests\ntest tests::seed_normalization_is_nfc_and_whitespace_stable ... ok\ntest tests::e2f01_and_e2f02_fixed_vectors_match ... ok\ntest tests::named_random_is_order_independent_and_isolated ... ok\ntest tests::identities_are_stable_and_case_sensitive ... ok\ntest tests::preferences_are_monotonic_for_one_seed ... ok\n\ntest result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n    Finished `release` profile [optimized] target(s) in 0.07s\n     Running unittests src/lib.rs (target/release/deps/container_integration-0804160f7e7f26e7)\n     Running unittests src/lib.rs (target/release/deps/deterministic_math-6be4590fe707cdec)\n     Running unittests src/lib.rs (target/release/deps/release_store-53dc9cca9faeb029)\n     Running unittests src/lib.rs (target/release/deps/sphere_core-eb9ed434cb35b9f4)\n     Running tests/e1_acceptance.rs (target/release/deps/e1_acceptance-d7eee348d3bb1deb)\n     Running unittests examples/e1_benchmark.rs (target/release/examples/e1_benchmark-9a65ab73e2c0c458)\n     Running unittests src/lib.rs (target/release/deps/sphere_release-9f483bb37728dd03)\n     Running tests/release_acceptance.rs (target/release/deps/release_acceptance-1c6a3ccbfa1197d9)\n     Running unittests src/lib.rs (target/release/deps/tectonics_core-e52e1bf35e6d772a)\n     Running unittests examples/e2_benchmark.rs (target/release/examples/e2_benchmark-63774f3b4b19f510)\n     Running unittests src/lib.rs (target/release/deps/tectonics_release-3a369a2e0d779543)\n     Running unittests src/main.rs (target/release/deps/terrain_cli-47405663273d1879)\n     Running unittests src/lib.rs (target/release/deps/terrain_input-6878ee7062a6f66c)\n     Running unittests src/lib.rs (target/release/deps/topology_fixture-546a24523e450df2)\n     Running unittests src/lib.rs (target/release/deps/world_contracts-bcff69cf57094df6)\n     Running unittests src/lib.rs (target/release/deps/world_spec-8d18058b4800e7f0)\n"
+    },
+    {
+      "name": "python-oracle",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.119646,
+      "output_sha256": "895b3307b07c37eca9a9251d242dfca085e6cf512215075ef4f0e6c27869fdd5",
+      "output": "test_child_areas_close_to_parent (test_oracle.OracleTests.test_child_areas_close_to_parent) ... ok\ntest_cubed_sphere_area_closes_independently (test_oracle.OracleTests.test_cubed_sphere_area_closes_independently) ... ok\ntest_e2_euler_velocity_analytic_vector (test_oracle.OracleTests.test_e2_euler_velocity_analytic_vector) ... ok\ntest_e2_integer_boundary_classification (test_oracle.OracleTests.test_e2_integer_boundary_classification) ... ok\ntest_e2_named_random_fixed_vector (test_oracle.OracleTests.test_e2_named_random_fixed_vector) ... ok\ntest_e2_seed_normalization (test_oracle.OracleTests.test_e2_seed_normalization) ... ok\ntest_equiangular_vectors_are_unit_length (test_oracle.OracleTests.test_equiangular_vectors_are_unit_length) ... ok\ntest_full_ramp (test_oracle.OracleTests.test_full_ramp) ... ok\ntest_half_ramp (test_oracle.OracleTests.test_half_ramp) ... ok\ntest_unit_sphere_area (test_oracle.OracleTests.test_unit_sphere_area) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.054s\n\nOK\n"
+    },
+    {
+      "name": "world-spec-vector",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.420242,
+      "output_sha256": "dac3002bc9712dd079942b4f7fe126e87e3a2213e1491eb0ca173a8adb5b0007",
+      "output": "{\"identity\":{\"generation_identity\":\"generation-38b03b9e2e45471bd58e7e36\",\"seed_key\":\"ec2a01a43513f16acb9dd774655b616521be87b6d1cd8cca57d2387ba9a6b15f\",\"world_id\":\"world-053ac0d3d275e96f10a6a143\"},\"plate_count\":10,\"spec_sha256\":\"053ac0d3d275e96f10a6a14359735fac2bc85305bf7a1bd60596ddcb3b3b96c9\"}\n"
+    },
+    {
+      "name": "e2-benchmark",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 8.906556,
+      "output_sha256": "0189a744b8b9097e1acbccb8c9e9799aeb4b8a7f5de383eb049f94ccede55992",
+      "output": "{\"detail_queries\":{\"count\":10000,\"pass\":true,\"seconds\":0.000501333},\"estimated_resident_upper_bound_bytes\":15800576,\"evidence_sha256\":\"a91032971a3505f6e736dd22db9c4b8af777a640f7d1692e21da45e1cc9d2cab\",\"maximum_generation_attempt\":1,\"owner_queries\":{\"count\":100000,\"pass\":true,\"seconds\":0.000344708},\"pval\":{\"count\":32,\"pass\":true,\"seconds\":8.507537292}}\n"
+    },
+    {
+      "name": "tectonic-conformance-1-thread",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.589222,
+      "output_sha256": "9c590bbec344ffe94af9201160d9fb2d4dacce68d6a0963a9e1347c66e180661",
+      "output": "{\"boundary_component_count\":12,\"boundary_edge_count\":3078,\"discrete_digest\":\"1cc2d9bb8ee39b7f124139e3752af491f56dcc7b6c25d567f06b84a2146ec9f8\",\"generation_attempt\":1,\"owner_count\":393216,\"plate_count\":6,\"qualifications\":{\"CONVERGENT\":959,\"DIVERGENT\":1646,\"STABLE\":256,\"UNRESOLVED\":217},\"world_id\":\"world-053ac0d3d275e96f10a6a143\"}\n"
+    },
+    {
+      "name": "tectonic-conformance-2-thread",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.839231,
+      "output_sha256": "9c590bbec344ffe94af9201160d9fb2d4dacce68d6a0963a9e1347c66e180661",
+      "output": "{\"boundary_component_count\":12,\"boundary_edge_count\":3078,\"discrete_digest\":\"1cc2d9bb8ee39b7f124139e3752af491f56dcc7b6c25d567f06b84a2146ec9f8\",\"generation_attempt\":1,\"owner_count\":393216,\"plate_count\":6,\"qualifications\":{\"CONVERGENT\":959,\"DIVERGENT\":1646,\"STABLE\":256,\"UNRESOLVED\":217},\"world_id\":\"world-053ac0d3d275e96f10a6a143\"}\n"
+    },
+    {
+      "name": "tectonic-conformance-4-thread",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.585137,
+      "output_sha256": "9c590bbec344ffe94af9201160d9fb2d4dacce68d6a0963a9e1347c66e180661",
+      "output": "{\"boundary_component_count\":12,\"boundary_edge_count\":3078,\"discrete_digest\":\"1cc2d9bb8ee39b7f124139e3752af491f56dcc7b6c25d567f06b84a2146ec9f8\",\"generation_attempt\":1,\"owner_count\":393216,\"plate_count\":6,\"qualifications\":{\"CONVERGENT\":959,\"DIVERGENT\":1646,\"STABLE\":256,\"UNRESOLVED\":217},\"world_id\":\"world-053ac0d3d275e96f10a6a143\"}\n"
+    },
+    {
+      "name": "sphere-build",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.459621,
+      "output_sha256": "06ed37acd63b6680726310d714a44aba20e355fcc6e80cad7fc56f51242229f0",
+      "output": "{\"path\":\"/var/folders/44/yjpl2g0j1h9c1qgx82695_6m0000gn/T/terrain-e2-6nkxh4z9/store/releases/e1-for-e2\",\"manifest_sha256\":\"d6d41752e41b30c4f7f00fc531f63e0d0e084b7514a2ea6fbc4658e6c750e5df\"}\n"
+    },
+    {
+      "name": "tectonic-build-pv01",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.728733,
+      "output_sha256": "ed6c5422fac57fb5b61ebfa5a7978ec0a541acc94c43d4f815236ff643d7d07f",
+      "output": "{\"path\":\"/var/folders/44/yjpl2g0j1h9c1qgx82695_6m0000gn/T/terrain-e2-6nkxh4z9/store/releases/pv01-e2-v1\",\"manifest_sha256\":\"e8eb899842a507db7b600d1d009b7e265f2a1c74d9cd0ca8da11f6cb2a3c7448\",\"owners_sha256\":\"a078f390a057c7c7aad0797db814aad40cfb03401d6ff630ad80d929092dd64b\"}\n"
+    },
+    {
+      "name": "tectonic-validate",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.567784,
+      "output_sha256": "3440a521deb97cc38dcc50a0f7b739591a41aff588610c4b87dbacf6d8a379d6",
+      "output": "{\"status\":\"VALID\",\"tectonic_release_id\":\"pv01-e2-v1\"}\n"
+    },
+    {
+      "name": "m1-build-fixed-test",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.602906,
+      "output_sha256": "1bd5631fa032e9055f6285bb8279349d28289550b8af7c136c529241cb179546",
+      "output": "{\"path\":\"/var/folders/44/yjpl2g0j1h9c1qgx82695_6m0000gn/T/terrain-e2-6nkxh4z9/store/releases/m1-pv01\",\"release_sha256\":\"ba0a0f0b3aea1f91aac24fd62be75a4854191bd5cdaf802e19622ce47cb8c8fa\"}\n"
+    },
+    {
+      "name": "m1-validate",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.406289,
+      "output_sha256": "d8e93c6b926dcc68c0ee984f45ec339e42af71fdefd108a979628c3c806395a6",
+      "output": "{\"m1_release_id\":\"m1-pv01\",\"status\":\"VALID\"}\n"
+    },
+    {
+      "name": "json-fixtures",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": ""
+    }
+  ]
+}

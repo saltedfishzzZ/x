@@ -1,0 +1,15 @@
+{
+  "fixture_id": "PVAL-E2.1-v2",
+  "schema": "E2.1-SEED-SET-v2",
+  "purpose": "VALIDATION",
+  "seeds": [
+    "E21-PVAL-01", "E21-PVAL-02", "E21-PVAL-03", "E21-PVAL-04",
+    "E21-PVAL-05", "E21-PVAL-06", "E21-PVAL-07", "E21-PVAL-08",
+    "E21-PVAL-09", "E21-PVAL-10", "E21-PVAL-11", "E21-PVAL-12",
+    "E21-PVAL-13", "E21-PVAL-14", "E21-PVAL-15", "E21-PVAL-16",
+    "E21-PVAL-17", "E21-PVAL-18", "E21-PVAL-19", "E21-PVAL-20",
+    "E21-PVAL-21", "E21-PVAL-22", "E21-PVAL-23", "E21-PVAL-24",
+    "E21-PVAL-25", "E21-PVAL-26", "E21-PVAL-27", "E21-PVAL-28",
+    "E21-PVAL-29", "E21-PVAL-30", "E21-PVAL-31", "E21-PVAL-32"
+  ]
+}

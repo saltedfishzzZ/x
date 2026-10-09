@@ -1,0 +1,9 @@
+{
+  "id": "E1F08",
+  "purpose": "非法输入和资源边界",
+  "invalid_vectors": [[0, 0, 0], ["NaN", 0, 0]],
+  "invalid_levels": [31, 255],
+  "invalid_radius_metres": [0, -1, "Infinity"],
+  "invalid_angular_radius": [-0.01, 3.141592653589794],
+  "insufficient_patch_budget": 1
+}

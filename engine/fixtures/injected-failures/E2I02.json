@@ -1,0 +1,6 @@
+{
+  "fixture_id": "E2I02",
+  "schema": "E2-INJECTED-FAILURE-v1",
+  "mutation": "BOUNDARY_SIDE_MISMATCH",
+  "expected_reason": "boundary topology mismatch"
+}

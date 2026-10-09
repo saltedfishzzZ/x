@@ -1,0 +1,10 @@
+{
+  "id": "E1F06",
+  "purpose": "固定 L8 到 L10 补丁、L9 过渡和 L10 halo",
+  "patch_id": "E1F06",
+  "core_parents": ["cs1/F0/L8/12231320"],
+  "target_level": 10,
+  "halo_parent_rings": 1,
+  "cell_budget": 128,
+  "expected": { "core_level": 10, "transition_level": 9, "halo_level": 10 }
+}

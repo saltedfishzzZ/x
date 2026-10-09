@@ -1,0 +1,15 @@
+{
+  "fixture_id": "PCAL-E2-v1",
+  "schema": "E2-SEED-SET-v1",
+  "purpose": "CALIBRATION",
+  "seeds": [
+    "PCAL-E2-01", "PCAL-E2-02", "PCAL-E2-03", "PCAL-E2-04",
+    "PCAL-E2-05", "PCAL-E2-06", "PCAL-E2-07", "PCAL-E2-08",
+    "PCAL-E2-09", "PCAL-E2-10", "PCAL-E2-11", "PCAL-E2-12",
+    "PCAL-E2-13", "PCAL-E2-14", "PCAL-E2-15", "PCAL-E2-16",
+    "PCAL-E2-17", "PCAL-E2-18", "PCAL-E2-19", "PCAL-E2-20",
+    "PCAL-E2-21", "PCAL-E2-22", "PCAL-E2-23", "PCAL-E2-24",
+    "PCAL-E2-25", "PCAL-E2-26", "PCAL-E2-27", "PCAL-E2-28",
+    "PCAL-E2-29", "PCAL-E2-30", "PCAL-E2-31", "PCAL-E2-32"
+  ]
+}

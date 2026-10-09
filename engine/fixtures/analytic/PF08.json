@@ -1,0 +1,9 @@
+{
+  "fixture_id": "PF08",
+  "version": 1,
+  "kind": "LOCAL_PATCH_AGGREGATION",
+  "parent_level": 8,
+  "patch_level": 10,
+  "expected": { "parent_mean_error_relative_max": 1e-10, "coarse_topology_unchanged": true }
+}
+

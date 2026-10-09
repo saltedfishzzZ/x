@@ -1,0 +1,11 @@
+{
+  "id": "E1F03",
+  "purpose": "跨面共享边、顶点和方向翻转",
+  "level": 4,
+  "sources": [
+    { "cell": "cs1/F0/L4/1111", "edge": "East" },
+    { "cell": "cs1/F0/L4/3333", "edge": "North" },
+    { "cell": "cs1/F4/L4/0000", "edge": "West" }
+  ],
+  "requirements": ["reciprocal", "same_edge_identity", "matching_endpoints"]
+}

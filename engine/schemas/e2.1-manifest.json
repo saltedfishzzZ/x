@@ -1,0 +1,13 @@
+{
+  "schema": "e2.1-schema-manifest-v1",
+  "status": "FROZEN",
+  "schemas": [
+    "e2.1-evidence-bundle-v1.schema.json",
+    "e2.1-platform-report-v1.schema.json",
+    "generation-spec-v2.schema.json",
+    "m1-input-release-v2.schema.json",
+    "spatial-release-v2.schema.json",
+    "tectonics-release-v2.schema.json",
+    "world-intent-spec-v2.schema.json"
+  ]
+}

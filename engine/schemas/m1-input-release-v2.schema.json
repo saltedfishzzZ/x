@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "planet-engine/m1-input-release-v2",
+  "title": "M1InputReleaseV2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "m1_release_id",
+    "generation_identity",
+    "input_bundle",
+    "run_plan",
+    "dependency_claims",
+    "admission_claim",
+    "capability_claims"
+  ],
+  "properties": {
+    "schema": { "const": "m1-input-release-v2" },
+    "m1_release_id": { "$ref": "#/$defs/safeId" },
+    "generation_identity": { "$ref": "#/$defs/safeId" },
+    "input_bundle": {
+      "type": "object",
+      "required": ["input_bundle_id", "upstream_releases", "datum", "required_capabilities"]
+    },
+    "run_plan": {
+      "type": "object",
+      "required": ["run_plan_id", "profile", "output_namespace"]
+    },
+    "dependency_claims": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/releaseRef" }
+    },
+    "admission_claim": { "type": "object" },
+    "capability_claims": { "type": "object" }
+  },
+  "$defs": {
+    "safeId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+    },
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "releaseRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["release_id", "manifest_sha256"],
+      "properties": {
+        "release_id": { "$ref": "#/$defs/safeId" },
+        "manifest_sha256": { "$ref": "#/$defs/sha256" }
+      }
+    }
+  }
+}

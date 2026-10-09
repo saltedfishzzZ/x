@@ -1,0 +1,18 @@
+.DS_Store
+**/.DS_Store
+
+# Rust 构建产物
+target/
+engine/target/
+
+# Python 本地环境与缓存
+.venv/
+engine/reference/python/.venv/
+.pytest_cache/
+**/.pytest_cache/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# 本地分发包；正式发布包在仓库外生成和保存
+*.zip

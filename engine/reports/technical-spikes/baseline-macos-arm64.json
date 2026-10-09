@@ -1,0 +1,35 @@
+{
+  "report_id": "T0-LOCAL-BASELINE-MACOS-ARM64-v1",
+  "status": "LOCAL_PASS_CROSS_PLATFORM_PENDING",
+  "platform": {
+    "os": "macOS",
+    "os_version": "15.5",
+    "architecture": "arm64"
+  },
+  "toolchain": {
+    "rustc": "1.90.0",
+    "cargo": "1.90.0",
+    "python": "3.13.14"
+  },
+  "checks": {
+    "rust_release_tests_passed": 33,
+    "rust_release_tests_failed": 0,
+    "python_oracle_tests_passed": 3,
+    "python_oracle_tests_failed": 0,
+    "clippy_warnings": 0,
+    "json_files_validated": 15,
+    "windows_msvc_cross_check": "PASS",
+    "windows_native_execution": "NOT_RUN",
+    "third_party_packages": 50,
+    "packages_missing_license_metadata": 0
+  },
+  "sphere_diagnostics": {
+    "cube_rotations": 24,
+    "l8_relative_area_error": 0.0
+  },
+  "capabilities": {
+    "terrain_generation": "NOT_AVAILABLE",
+    "desktop_application": "NOT_AVAILABLE",
+    "native_windows_validation": "NOT_AVAILABLE"
+  }
+}

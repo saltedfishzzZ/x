@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "planet-engine/e2.1-platform-report-v1",
+  "title": "E2.1PlatformReportV1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "report_schema",
+    "status",
+    "platform",
+    "source",
+    "check_set_sha256",
+    "gates",
+    "checks",
+    "authoritative_evidence_sha256"
+  ],
+  "properties": {
+    "report_schema": { "const": "E2.1-PLATFORM-REPORT-v1" },
+    "status": { "enum": ["PLATFORM_PASS", "FAIL", "NOT_EVALUATED"] },
+    "generated_at_utc": { "type": "string", "format": "date-time" },
+    "platform": { "type": "object" },
+    "source": {
+      "type": "object",
+      "required": ["source_tree_sha256", "cargo_lock_sha256", "fixture_manifest_sha256", "schema_manifest_sha256"]
+    },
+    "check_set_sha256": { "$ref": "#/$defs/sha256" },
+    "gates": { "type": "object", "minProperties": 20 },
+    "checks": { "type": "array" },
+    "authoritative_evidence": { "type": "object" },
+    "authoritative_evidence_sha256": { "$ref": "#/$defs/sha256" }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+  }
+}

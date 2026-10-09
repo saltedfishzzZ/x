@@ -1,0 +1,19 @@
+[package]
+name = "tectonics-core"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+deterministic-numeric = { path = "../deterministic-numeric" }
+serde.workspace = true
+sha2.workspace = true
+sphere-core = { path = "../sphere-core" }
+thiserror.workspace = true
+world-contracts = { path = "../world-contracts" }
+world-spec = { path = "../world-spec" }
+
+[dev-dependencies]
+serde_json.workspace = true
+
+[lints]
+workspace = true

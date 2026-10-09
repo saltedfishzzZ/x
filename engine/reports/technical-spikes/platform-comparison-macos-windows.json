@@ -1,0 +1,17 @@
+{
+  "comparison_schema": "T0-E0-PLATFORM-COMPARISON-v1",
+  "differences": [],
+  "left_platform": {
+    "machine": "arm64",
+    "python_implementation": "CPython",
+    "release": "24.5.0",
+    "system": "Darwin"
+  },
+  "right_platform": {
+    "machine": "AMD64",
+    "python_implementation": "CPython",
+    "release": "10",
+    "system": "Windows"
+  },
+  "status": "PASS"
+}

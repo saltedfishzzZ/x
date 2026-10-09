@@ -1,0 +1,300 @@
+{
+  "report_schema": "T0-E1-PLATFORM-REPORT-v1",
+  "status": "PLATFORM_PASS",
+  "generated_at_utc": "2026-10-08T07:01:32.843194+00:00",
+  "platform": {
+    "system": "Windows",
+    "release": "10",
+    "machine": "AMD64",
+    "python_implementation": "CPython"
+  },
+  "toolchain": {
+    "rustc": "rustc 1.90.0 (1159e78c4 2025-09-14)",
+    "cargo": "cargo 1.90.0 (840b83a10 2025-07-30)",
+    "python": "3.11.9"
+  },
+  "counts": {
+    "rust_tests": 46,
+    "python_oracle_tests": 6,
+    "json_fixtures": 21
+  },
+  "deterministic_evidence": {
+    "identity_format_version": "cs1",
+    "l0_topology": [
+      {
+        "source_cell": "cs1/F0/L0/",
+        "source_edge": "West",
+        "target_cell": "cs1/F3/L0/",
+        "target_edge": "East",
+        "edge_orientation": "Same"
+      },
+      {
+        "source_cell": "cs1/F0/L0/",
+        "source_edge": "East",
+        "target_cell": "cs1/F2/L0/",
+        "target_edge": "West",
+        "edge_orientation": "Same"
+      },
+      {
+        "source_cell": "cs1/F0/L0/",
+        "source_edge": "South",
+        "target_cell": "cs1/F5/L0/",
+        "target_edge": "East",
+        "edge_orientation": "Reversed"
+      },
+      {
+        "source_cell": "cs1/F0/L0/",
+        "source_edge": "North",
+        "target_cell": "cs1/F4/L0/",
+        "target_edge": "East",
+        "edge_orientation": "Same"
+      },
+      {
+        "source_cell": "cs1/F1/L0/",
+        "source_edge": "West",
+        "target_cell": "cs1/F2/L0/",
+        "target_edge": "East",
+        "edge_orientation": "Same"
+      },
+      {
+        "source_cell": "cs1/F1/L0/",
+        "source_edge": "East",
+        "target_cell": "cs1/F3/L0/",
+        "target_edge": "West",
+        "edge_orientation": "Same"
+      },
+      {
+        "source_cell": "cs1/F1/L0/",
+        "source_edge": "South",
+        "target_cell": "cs1/F5/L0/",
+        "target_edge": "West",
+        "edge_orientation": "Same"
+      },
+      {
+        "source_cell": "cs1/F1/L0/",
+        "source_edge": "North",
+        "target_cell": "cs1/F4/L0/",
+        "target_edge": "West",
+        "edge_orientation": "Reversed"
+      },
+      {
+        "source_cell": "cs1/F2/L0/",
+        "source_edge": "West",
+        "target_cell": "cs1/F0/L0/",
+        "target_edge": "East",
+        "edge_orientation": "Same"
+      },
+      {
+        "source_cell": "cs1/F2/L0/",
+        "source_edge": "East",
+        "target_cell": "cs1/F1/L0/",
+        "target_edge": "West",
+        "edge_orientation": "Same"
+      },
+      {
+        "source_cell": "cs1/F2/L0/",
+        "source_edge": "South",
+        "target_cell": "cs1/F5/L0/",
+        "target_edge": "South",
+        "edge_orientation": "Reversed"
+      },
+      {
+        "source_cell": "cs1/F2/L0/",
+        "source_edge": "North",
+        "target_cell": "cs1/F4/L0/",
+        "target_edge": "North",
+        "edge_orientation": "Reversed"
+      },
+      {
+        "source_cell": "cs1/F3/L0/",
+        "source_edge": "West",
+        "target_cell": "cs1/F1/L0/",
+        "target_edge": "East",
+        "edge_orientation": "Same"
+      },
+      {
+        "source_cell": "cs1/F3/L0/",
+        "source_edge": "East",
+        "target_cell": "cs1/F0/L0/",
+        "target_edge": "West",
+        "edge_orientation": "Same"
+      },
+      {
+        "source_cell": "cs1/F3/L0/",
+        "source_edge": "South",
+        "target_cell": "cs1/F5/L0/",
+        "target_edge": "North",
+        "edge_orientation": "Same"
+      },
+      {
+        "source_cell": "cs1/F3/L0/",
+        "source_edge": "North",
+        "target_cell": "cs1/F4/L0/",
+        "target_edge": "South",
+        "edge_orientation": "Same"
+      },
+      {
+        "source_cell": "cs1/F4/L0/",
+        "source_edge": "West",
+        "target_cell": "cs1/F1/L0/",
+        "target_edge": "North",
+        "edge_orientation": "Reversed"
+      },
+      {
+        "source_cell": "cs1/F4/L0/",
+        "source_edge": "East",
+        "target_cell": "cs1/F0/L0/",
+        "target_edge": "North",
+        "edge_orientation": "Same"
+      },
+      {
+        "source_cell": "cs1/F4/L0/",
+        "source_edge": "South",
+        "target_cell": "cs1/F3/L0/",
+        "target_edge": "North",
+        "edge_orientation": "Same"
+      },
+      {
+        "source_cell": "cs1/F4/L0/",
+        "source_edge": "North",
+        "target_cell": "cs1/F2/L0/",
+        "target_edge": "North",
+        "edge_orientation": "Reversed"
+      },
+      {
+        "source_cell": "cs1/F5/L0/",
+        "source_edge": "West",
+        "target_cell": "cs1/F1/L0/",
+        "target_edge": "South",
+        "edge_orientation": "Same"
+      },
+      {
+        "source_cell": "cs1/F5/L0/",
+        "source_edge": "East",
+        "target_cell": "cs1/F0/L0/",
+        "target_edge": "South",
+        "edge_orientation": "Reversed"
+      },
+      {
+        "source_cell": "cs1/F5/L0/",
+        "source_edge": "South",
+        "target_cell": "cs1/F2/L0/",
+        "target_edge": "South",
+        "edge_orientation": "Reversed"
+      },
+      {
+        "source_cell": "cs1/F5/L0/",
+        "source_edge": "North",
+        "target_cell": "cs1/F3/L0/",
+        "target_edge": "South",
+        "edge_orientation": "Same"
+      }
+    ],
+    "l8_relative_area_tolerance": "1e-12",
+    "manifest_sha256": "0f30340dab3e24fba43f97dacfeb56c9bef3c4fc7283337a5622f9471e6110bb"
+  },
+  "deterministic_evidence_sha256": "971ce8e78086158451e729ceb32a83ad77e5303d53927bd594535962d5078704",
+  "performance": {
+    "geometry_l8": {
+      "cell_count": 393216,
+      "limit_seconds": 10.0,
+      "pass": true,
+      "seconds": 0.5268915
+    },
+    "locate_l10": {
+      "limit_seconds": 3.0,
+      "pass": true,
+      "query_count": 100000,
+      "seconds": 0.0111078
+    },
+    "patch_e1f06": {
+      "limit_seconds": 2.0,
+      "pass": true,
+      "seconds": 9.42e-05
+    },
+    "profile": "E1-PERFORMANCE-v1"
+  },
+  "release_package_bytes": 6426,
+  "checks": [
+    {
+      "name": "python-version",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.0,
+      "output_sha256": "8f5d262b3bf12072437206a54a16f89e7ffac61876b9b22b78c71d2966887916",
+      "output": "3.11.9"
+    },
+    {
+      "name": "cargo-fmt",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 1.485,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": ""
+    },
+    {
+      "name": "cargo-clippy",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 3.828,
+      "output_sha256": "6b9c1ae5661d9ebac283ee965e35286efef4bcf8739624a83caa4f96379e6c2f",
+      "output": "    Checking sphere-core v0.1.0 (C:\\terrain-engine\\engine\\crates\\sphere-core)\n    Checking topology-fixture v0.1.0 (C:\\terrain-engine\\engine\\spikes\\topology-fixture)\n    Checking container-integration v0.1.0 (C:\\terrain-engine\\engine\\spikes\\container-integration)\n    Checking world-contracts v0.1.0 (C:\\terrain-engine\\engine\\crates\\world-contracts)\n    Checking release-store v0.1.0 (C:\\terrain-engine\\engine\\crates\\release-store)\n    Checking sphere-release v0.1.0 (C:\\terrain-engine\\engine\\crates\\sphere-release)\n    Checking deterministic-math v0.1.0 (C:\\terrain-engine\\engine\\spikes\\deterministic-math)\n    Checking terrain-cli v0.1.0 (C:\\terrain-engine\\engine\\crates\\terrain-cli)\n    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.66s\n"
+    },
+    {
+      "name": "cargo-test-release",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 7.016,
+      "output_sha256": "a8281fd0fc8f6f51bf5da8c0d9af4ab3f7012bdaa0e50597abe482629826c6c8",
+      "output": "\nrunning 4 tests\ntest tests::capacity_curve_is_monotone ... ok\ntest tests::dry_below_minimum_and_full_above_maximum ... ok\ntest tests::half_level_matches_analytic_subtriangle ... ok\ntest tests::injected_non_monotonicity_is_rejected ... ok\n\ntest result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 4 tests\ntest tests::named_random_is_order_independent_and_stream_isolated ... ok\ntest tests::spherical_basis_has_expected_low_order_values ... ok\ntest tests::stable_sum_ignores_input_order ... ok\ntest tests::named_values_reduce_identically_with_one_two_or_four_workers ... ok\n\ntest result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 5 tests\ntest tests::lossless_compression_does_not_change_semantic_bytes ... ok\ntest tests::interrupted_candidate_is_not_a_release ... ok\ntest tests::byte_tampering_is_detected ... ok\ntest tests::legacy_header_verifies_with_pre_migration_semantics ... ok\ntest tests::field_round_trip_and_atomic_commit ... ok\n\ntest result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 15 tests\ntest e1_g02_cube_corner_has_three_incident_cells ... ok\ntest e1_f08_rejects_invalid_levels_radii_caps_and_patch_budgets ... ok\ntest e1_g08_cube_rotations_preserve_cell_area ... ok\ntest e1_g01_child_order_is_southwest_southeast_northwest_northeast ... ok\ntest e1_g04_non_boundary_face_mapping_round_trip ... ok\ntest e1_g06_children_preserve_parent_area ... ok\ntest e1_g10_patch_has_three_scales_and_area_weights ... ok\ntest e1_g03_unit_vector_contract_and_invalid_inputs ... ok\ntest e1_g04_ties_use_x_then_y_then_z ... ok\ntest e1_g07_tangent_frame_is_orthonormal_and_right_handed ... ok\ntest e1_g11_patch_signature_is_input_order_independent ... ok\ntest e1_g01_identity_round_trip_parent_child_and_no_sample_collision ... ok\ntest e1_g09_cap_cover_is_sorted_unique_and_contains_sampled_points ... ok\ntest e1_g02_all_l4_neighbours_are_reciprocal_with_shared_edges ... ok\ntest e1_g05_l8_global_area_closes ... ok\n\ntest result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.27s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 5 tests\ntest e1_f08_rejects_path_like_release_identity ... ok\ntest e1_g13_injected_cross_face_corruption_is_rejected ... ok\ntest e1_g14_manifest_byte_tampering_is_rejected ... ok\ntest e1_g14_noncanonical_manifest_is_rejected_even_with_matching_hash ... ok\ntest e1_g14_publish_open_and_immutable_identity ... ok\n\ntest result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.23s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 3 tests\ntest tests::equal_minima_stay_distinct_without_an_edge ... ok\ntest tests::flat_plateau_remains_one_region ... ok\ntest tests::saddle_merges_two_lower_components ... ok\n\ntest result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 10 tests\ntest tests::canonical_json_extreme_exponents_are_stable ... ok\ntest tests::canonical_map_order_is_stable ... ok\ntest tests::canonical_json_preserves_unicode_scalar_sequence ... ok\ntest tests::canonical_json_recursively_ignores_hash_map_insertion_order ... ok\ntest tests::canonical_json_normalizes_negative_zero ... ok\ntest tests::current_asset_header_reads_without_migration ... ok\ntest tests::dependencies_must_be_sorted ... ok\ntest tests::future_asset_header_version_is_rejected ... ok\ntest tests::legacy_asset_header_migrates_without_changing_semantic_identity ... ok\ntest tests::canonical_json_rejects_non_finite_numbers ... ok\n\ntest result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n   Compiling sphere-core v0.1.0 (C:\\terrain-engine\\engine\\crates\\sphere-core)\n   Compiling sphere-release v0.1.0 (C:\\terrain-engine\\engine\\crates\\sphere-release)\n   Compiling deterministic-math v0.1.0 (C:\\terrain-engine\\engine\\spikes\\deterministic-math)\n   Compiling terrain-cli v0.1.0 (C:\\terrain-engine\\engine\\crates\\terrain-cli)\n    Finished `release` profile [optimized] target(s) in 5.07s\n     Running unittests src\\lib.rs (target\\release\\deps\\container_integration-b4d6c2190ad3938a.exe)\n     Running unittests src\\lib.rs (target\\release\\deps\\deterministic_math-4038e33e4fcc7975.exe)\n     Running unittests src\\lib.rs (target\\release\\deps\\release_store-9113199b30468b51.exe)\n     Running unittests src\\lib.rs (target\\release\\deps\\sphere_core-ba70636f2bed0849.exe)\n     Running tests\\e1_acceptance.rs (target\\release\\deps\\e1_acceptance-8437a04af05268a2.exe)\n     Running unittests src\\lib.rs (target\\release\\deps\\sphere_release-edcb17292ff2cac2.exe)\n     Running tests\\release_acceptance.rs (target\\release\\deps\\release_acceptance-71bf41bcab7e0278.exe)\n     Running unittests src\\main.rs (target\\release\\deps\\terrain_cli-105496f6fddbe9fe.exe)\n     Running unittests src\\lib.rs (target\\release\\deps\\topology_fixture-31c805338ba69f32.exe)\n     Running unittests src\\lib.rs (target\\release\\deps\\world_contracts-7346497d42704389.exe)\n   Doc-tests container_integration\n   Doc-tests deterministic_math\n   Doc-tests release_store\n   Doc-tests sphere_core\n   Doc-tests sphere_release\n   Doc-tests topology_fixture\n   Doc-tests world_contracts\n"
+    },
+    {
+      "name": "python-oracle",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.171,
+      "output_sha256": "e3be8fdd6e4d54ea1053ea2ef96bb12bd499a90c9dd1c1adf97c9dd44c3c07d3",
+      "output": "test_child_areas_close_to_parent (test_oracle.OracleTests.test_child_areas_close_to_parent) ... ok\ntest_cubed_sphere_area_closes_independently (test_oracle.OracleTests.test_cubed_sphere_area_closes_independently) ... ok\ntest_equiangular_vectors_are_unit_length (test_oracle.OracleTests.test_equiangular_vectors_are_unit_length) ... ok\ntest_full_ramp (test_oracle.OracleTests.test_full_ramp) ... ok\ntest_half_ramp (test_oracle.OracleTests.test_half_ramp) ... ok\ntest_unit_sphere_area (test_oracle.OracleTests.test_unit_sphere_area) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.069s\n\nOK\n"
+    },
+    {
+      "name": "sphere-inspect",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 1.969,
+      "output_sha256": "178c311dcee9d05cebce33d2a7c94edd08f6ee9eb7e51090d3bcfb7b72b3328b",
+      "output": "{\"schema\":\"E1-SPATIAL-RELEASE-v1\",\"spatial_release_id\":\"preview\",\"spatial_reference\":{\"frame_id\":\"cubed-sphere-equiangular-v1\",\"radius_metres\":6371000.0,\"maximum_identity_level\":30,\"global_prototype_level\":8,\"local_prototype_level\":10},\"identity_format_version\":\"cs1\",\"face_order\":[\"+X\",\"-X\",\"+Y\",\"-Y\",\"+Z\",\"-Z\"],\"boundary_tie_break\":\"X>Y>Z; positive side owns zero\",\"child_order\":[\"SW\",\"SE\",\"NW\",\"NE\"],\"global_coverage_level\":8,\"patches\":[],\"capabilities\":{\"cell_geometry\":\"AVAILABLE\",\"cell_identity\":\"AVAILABLE\",\"climate\":\"NOT_AVAILABLE\",\"fixed_level_cap_cover\":\"AVAILABLE\",\"hydrology\":\"NOT_AVAILABLE\",\"materials\":\"NOT_AVAILABLE\",\"neighbour_topology\":\"AVAILABLE\",\"patch_2_to_1\":\"AVAILABLE\",\"terrain_generation\":\"NOT_AVAILABLE\"},\"validation_evidence\":{\"profile\":\"E1-G01..G14-v1\",\"l8_relative_area_tolerance\":\"1e-12\",\"l0_topology\":[{\"source_cell\":\"cs1/F0/L0/\",\"source_edge\":\"West\",\"target_cell\":\"cs1/F3/L0/\",\"target_edge\":\"East\",\"edge_orientation\":\"Same\"},{\"source_cell\":\"cs1/F0/L0/\",\"source_edge\":\"East\",\"target_cell\":\"cs1/F2/L0/\",\"target_edge\":\"West\",\"edge_orientation\":\"Same\"},{\"source_cell\":\"cs1/F0/L0/\",\"source_edge\":\"South\",\"target_cell\":\"cs1/F5/L0/\",\"target_edge\":\"East\",\"edge_orientation\":\"Reversed\"},{\"source_cell\":\"cs1/F0/L0/\",\"source_edge\":\"North\",\"target_cell\":\"cs1/F4/L0/\",\"target_edge\":\"East\",\"edge_orientation\":\"Same\"},{\"source_cell\":\"cs1/F1/L0/\",\"source_edge\":\"West\",\"target_cell\":\"cs1/F2/L0/\",\"target_edge\":\"East\",\"edge_orientation\":\"Same\"},{\"source_cell\":\"cs1/F1/L0/\",\"source_edge\":\"East\",\"target_cell\":\"cs1/F3/L0/\",\"target_edge\":\"West\",\"edge_orientation\":\"Same\"},{\"source_cell\":\"cs1/F1/L0/\",\"source_edge\":\"South\",\"target_cell\":\"cs1/F5/L0/\",\"target_edge\":\"West\",\"edge_orientation\":\"Same\"},{\"source_cell\":\"cs1/F1/L0/\",\"source_edge\":\"North\",\"target_cell\":\"cs1/F4/L0/\",\"target_edge\":\"West\",\"edge_orientation\":\"Reversed\"},{\"source_cell\":\"cs1/F2/L0/\",\"source_edge\":\"West\",\"target_cell\":\"cs1/F0/L0/\",\"target_edge\":\"East\",\"edge_orientation\":\"Same\"},{\"source_cell\":\"cs1/F2/L0/\",\"source_edge\":\"East\",\"target_cell\":\"cs1/F1/L0/\",\"target_edge\":\"West\",\"edge_orientation\":\"Same\"},{\"source_cell\":\"cs1/F2/L0/\",\"source_edge\":\"South\",\"target_cell\":\"cs1/F5/L0/\",\"target_edge\":\"South\",\"edge_orientation\":\"Reversed\"},{\"source_cell\":\"cs1/F2/L0/\",\"source_edge\":\"North\",\"target_cell\":\"cs1/F4/L0/\",\"target_edge\":\"North\",\"edge_orientation\":\"Reversed\"},{\"source_cell\":\"cs1/F3/L0/\",\"source_edge\":\"West\",\"target_cell\":\"cs1/F1/L0/\",\"target_edge\":\"East\",\"edge_orientation\":\"Same\"},{\"source_cell\":\"cs1/F3/L0/\",\"source_edge\":\"East\",\"target_cell\":\"cs1/F0/L0/\",\"target_edge\":\"West\",\"edge_orientation\":\"Same\"},{\"source_cell\":\"cs1/F3/L0/\",\"source_edge\":\"South\",\"target_cell\":\"cs1/F5/L0/\",\"target_edge\":\"North\",\"edge_orientation\":\"Same\"},{\"source_cell\":\"cs1/F3/L0/\",\"source_edge\":\"North\",\"target_cell\":\"cs1/F4/L0/\",\"target_edge\":\"South\",\"edge_orientation\":\"Same\"},{\"source_cell\":\"cs1/F4/L0/\",\"source_edge\":\"West\",\"target_cell\":\"cs1/F1/L0/\",\"target_edge\":\"North\",\"edge_orientation\":\"Reversed\"},{\"source_cell\":\"cs1/F4/L0/\",\"source_edge\":\"East\",\"target_cell\":\"cs1/F0/L0/\",\"target_edge\":\"North\",\"edge_orientation\":\"Same\"},{\"source_cell\":\"cs1/F4/L0/\",\"source_edge\":\"South\",\"target_cell\":\"cs1/F3/L0/\",\"target_edge\":\"North\",\"edge_orientation\":\"Same\"},{\"source_cell\":\"cs1/F4/L0/\",\"source_edge\":\"North\",\"target_cell\":\"cs1/F2/L0/\",\"target_edge\":\"North\",\"edge_orientation\":\"Reversed\"},{\"source_cell\":\"cs1/F5/L0/\",\"source_edge\":\"West\",\"target_cell\":\"cs1/F1/L0/\",\"target_edge\":\"South\",\"edge_orientation\":\"Same\"},{\"source_cell\":\"cs1/F5/L0/\",\"source_edge\":\"East\",\"target_cell\":\"cs1/F0/L0/\",\"target_edge\":\"South\",\"edge_orientation\":\"Reversed\"},{\"source_cell\":\"cs1/F5/L0/\",\"source_edge\":\"South\",\"target_cell\":\"cs1/F2/L0/\",\"target_edge\":\"South\",\"edge_orientation\":\"Reversed\"},{\"source_cell\":\"cs1/F5/L0/\",\"source_edge\":\"North\",\"target_cell\":\"cs1/F3/L0/\",\"target_edge\":\"South\",\"edge_orientation\":\"Same\"}]},\"direct_dependency_hashes\":{}}\n"
+    },
+    {
+      "name": "sphere-benchmark",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 6.406,
+      "output_sha256": "a824c0c78224c52e26fd49deb976c685423edbfc90dfdb633a32cb8bf1877df0",
+      "output": "{\"geometry_l8\":{\"cell_count\":393216,\"limit_seconds\":10.0,\"pass\":true,\"seconds\":0.5268915},\"locate_l10\":{\"limit_seconds\":3.0,\"pass\":true,\"query_count\":100000,\"seconds\":0.0111078},\"patch_e1f06\":{\"limit_seconds\":2.0,\"pass\":true,\"seconds\":0.0000942},\"profile\":\"E1-PERFORMANCE-v1\"}\n"
+    },
+    {
+      "name": "sphere-build",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.188,
+      "output_sha256": "8284143a6e166f641c4e342436edd729bd55b0adb4168f17cffcf08985ca058c",
+      "output": "{\"path\":\"C:\\\\Users\\\\ADMINI~1\\\\AppData\\\\Local\\\\Temp\\\\terrain-e1-l8kj65yw\\\\store\\\\releases\\\\e1-conformance\",\"manifest_sha256\":\"0f30340dab3e24fba43f97dacfeb56c9bef3c4fc7283337a5622f9471e6110bb\"}\n"
+    },
+    {
+      "name": "sphere-validate",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.203,
+      "output_sha256": "609b71eedf21199a23acb7d88a33a8e1b72fb714f81f325b0af54c7d9e343d33",
+      "output": "{\"spatial_release_id\":\"e1-conformance\",\"status\":\"VALID\"}\n"
+    },
+    {
+      "name": "json-fixtures",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": ""
+    }
+  ]
+}

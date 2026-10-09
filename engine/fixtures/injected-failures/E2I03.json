@@ -1,0 +1,6 @@
+{
+  "fixture_id": "E2I03",
+  "schema": "E2-INJECTED-FAILURE-v1",
+  "mutation": "TECTONIC_MANIFEST_HASH_MISMATCH",
+  "expected_reason": "manifest hash mismatch"
+}

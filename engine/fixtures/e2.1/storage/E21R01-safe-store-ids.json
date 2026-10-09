@@ -1,0 +1,6 @@
+{
+  "fixture_id": "E21-R01",
+  "schema": "e2.1-safe-store-id-fixture-v1",
+  "accepted": ["release-1", "world.v2", "A_b-9", "COM10"],
+  "rejected": ["", ".", "..", "../escape", "a/b", "a\\b", "/root", "CON", "con.txt", "NUL", "COM1", "lpt9.log", "é"]
+}

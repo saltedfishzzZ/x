@@ -1,0 +1,847 @@
+{
+  "report_schema": "E2.1-PLATFORM-REPORT-v1",
+  "status": "NOT_EVALUATED",
+  "generated_at_utc": "2026-10-09T03:06:20.259320+00:00",
+  "platform": {
+    "system": "Windows",
+    "release": "10",
+    "machine": "AMD64",
+    "python": "3.11.9"
+  },
+  "source": {
+    "source_tree_sha256": "41361af3ed1805e1a52754539cbf28be1a0e7b9740d8d4c05ded121a71fdf4ea",
+    "cargo_lock_sha256": "d1821ad44cb965d512de2f6b2f117acf17b93a76fd35381ed1e7a6e82027bcb4",
+    "fixture_manifest_sha256": "6d3d3f8ff6f3bc978bf6478076181210624ebec898b5656591fff388903f5c11",
+    "schema_manifest_sha256": "7068a6edbaef041fc4e163ddb6013c4a6409efa850747b99289b22021992f82d"
+  },
+  "check_set_sha256": "aa6b27da58019415ff10c6cdd9bfb88ad6b185ed93765fc87d21c7923c62d328",
+  "gates": {
+    "E21-G01": {
+      "status": "PASS",
+      "assertion": "v1基线未改变",
+      "checks": [
+        "e21-v1-baseline"
+      ],
+      "evidence_sha256": "91d54e3a429cacbb2ca74891b724566b0b082bb109a7f4770297968284898369"
+    },
+    "E21-G02": {
+      "status": "PASS",
+      "assertion": "v2模式、规范编码与CLI发布重开",
+      "checks": [
+        "e21-v2-schemas",
+        "cargo-test-release",
+        "cargo-build-cli",
+        "e21-cli-workflow"
+      ],
+      "evidence_sha256": "33c382d7518dff2db70cb89e0c77e4a8f40460d64f810edb172d20261692d82f"
+    },
+    "E21-G03": {
+      "status": "PASS",
+      "assertion": "世界与生成身份分层",
+      "checks": [
+        "identity-layering"
+      ],
+      "evidence_sha256": "6e92461eddafe6985ef86f3509b3b66ccb714e327a65f3e790a22ad0a9fe2b91"
+    },
+    "E21-G04": {
+      "status": "PASS",
+      "assertion": "固定测试身份隔离",
+      "checks": [
+        "fixed-world-isolation"
+      ],
+      "evidence_sha256": "42a748df674b03300c78ca65c3da072cd81df97a36d7a8319a618e604ed46485"
+    },
+    "E21-G05": {
+      "status": "PASS",
+      "assertion": "板块骨架稳定",
+      "checks": [
+        "skeleton-stability"
+      ],
+      "evidence_sha256": "3ddd5a2b87cbd74469bb1bc61d19b33b56d5c45407b70b18c76cc1986c0586be"
+    },
+    "E21-G06": {
+      "status": "PASS",
+      "assertion": "活动倍率单因素关系",
+      "checks": [
+        "activity-metamorphism"
+      ],
+      "evidence_sha256": "b70f34c3421acaec47dee7e86d18e05a393643b924ce44f4d7fab033051d2b0c"
+    },
+    "E21-G07": {
+      "status": "PASS",
+      "assertion": "边界类型与强度分离",
+      "checks": [
+        "boundary-separation"
+      ],
+      "evidence_sha256": "0c0760068267f13ebc4bf0fe1d0f0dbc581dbe5c817bc6d9f114e69886d13861"
+    },
+    "E21-G08": {
+      "status": "PASS",
+      "assertion": "M1结构与自身自洽",
+      "checks": [
+        "m1-self-consistency"
+      ],
+      "evidence_sha256": "54ac6d905457b1ae74fcd43c2dc80e8d2132db62eb68519fd22e1c05db41ac45"
+    },
+    "E21-G09": {
+      "status": "PASS",
+      "assertion": "M1完整准入重建",
+      "checks": [
+        "m1-full-admission",
+        "m1-filesystem-admission"
+      ],
+      "evidence_sha256": "e2da972b52d2026c654dbab3526358f27c7768eecdafac923575dea5a6e28432"
+    },
+    "E21-G10": {
+      "status": "PASS",
+      "assertion": "E1解析与边几何",
+      "checks": [
+        "edge-geometry",
+        "query-semantics"
+      ],
+      "evidence_sha256": "6da2ceb37d1c2d0ede8cbc9fbe5e10f797738d4ba787261cd282600534bed4a5"
+    },
+    "E21-G11": {
+      "status": "PASS",
+      "assertion": "补丁谱系、晕区与2:1平衡",
+      "checks": [
+        "patch-reconstruction"
+      ],
+      "evidence_sha256": "36841509631d6a3d968d27de9720ac9d87b7a626e27b1ee7220310b05942ab8b"
+    },
+    "E21-G12": {
+      "status": "PASS",
+      "assertion": "D0/D1数值确定性",
+      "checks": [
+        "deterministic-numeric",
+        "python-oracle"
+      ],
+      "evidence_sha256": "5a342a4128621fdc93b6082201c8497c02d0a8734d30d487cd801ba86592fae5"
+    },
+    "E21-G13": {
+      "status": "PASS",
+      "assertion": "真实1/2/4线程确定性",
+      "checks": [
+        "parallel-metamorphism"
+      ],
+      "evidence_sha256": "1bcfc1a82ac69d1c4acd85bd8f24cbe8d03048f89dd1289e8b4e20e3dc82cfad"
+    },
+    "E21-G14": {
+      "status": "PASS",
+      "assertion": "路径、事务和冲突处理",
+      "checks": [
+        "store-semantics"
+      ],
+      "evidence_sha256": "3490d415c48f95e4f2f43a32df27fc78adeb575af008223e2d0547a6f1ce8d66"
+    },
+    "E21-G15": {
+      "status": "PASS",
+      "assertion": "PCAL实际执行",
+      "checks": [
+        "pcal-execution"
+      ],
+      "evidence_sha256": "01ff5083dd131bc03e76d7619ce80b7db4ad94cf5e134fadf3a8b45233f86f7e"
+    },
+    "E21-G16": {
+      "status": "PASS",
+      "assertion": "PVAL独立执行",
+      "checks": [
+        "pval-execution"
+      ],
+      "evidence_sha256": "51ed90844faf9b480729dbca708f5c6eef13332c1c40458ed3e1d20a3b33f6e3"
+    },
+    "E21-G17": {
+      "status": "PASS",
+      "assertion": "固定件直接加载与覆盖",
+      "checks": [
+        "e21-fixture-audit",
+        "cargo-test-release"
+      ],
+      "evidence_sha256": "5d4a93be6967ec60494a11085ef053dd4bc5d6c1d2bf5fd6c4ca4c7cf83e3e09"
+    },
+    "E21-G18": {
+      "status": "NOT_EVALUATED",
+      "assertion": "平台同源和同检查集合",
+      "reason": "等待Windows原生报告",
+      "checks": [],
+      "evidence_sha256": "22aea7cc14b5a3f1bc8416cb31ff7d23aa02737d24e52d6eb63016654b0ae24d"
+    },
+    "E21-G19": {
+      "status": "NOT_EVALUATED",
+      "assertion": "跨平台权威证据一致",
+      "reason": "等待macOS与Windows比较",
+      "checks": [],
+      "evidence_sha256": "d1d15022b970fc45c3061e427df68606535a865eafb32466571eea6c002f458e"
+    },
+    "E21-G20": {
+      "status": "NOT_EVALUATED",
+      "assertion": "冻结证据包完整",
+      "reason": "等待E2.1-10冻结",
+      "checks": [],
+      "evidence_sha256": "dfba339d695e674fb53a1f54c5f11eb86833ea4c02f247746e1e9e0bf805321d"
+    }
+  },
+  "checks": [
+    {
+      "name": "e21-v1-baseline",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.0,
+      "output_sha256": "34489959324962cd0953f8296d553f2ac7ddd2f77133ec6ce71c891847abe01e",
+      "output": "{\"fixtures/manifest.json\": \"4205cd0f5c511cd39d62ea9f5bd2d79fa7ffcfc14cf89970ac2981e18fa0a785\", \"reports/e2/E2冻结验收报告.md\": \"66390296ce030234bfa97b40162e790a6dacdb21d18a86c810c31618e32409f4\", \"reports/e2/platform-comparison-macos-windows.json\": \"8d4d224c0fd2082a63679ce901e942fab00bf1462540e76a474361c154ca9293\", \"reports/e2/platform-darwin-arm64.json\": \"34b1d70be55b05ce1496ea68ddc1f7b8f81e057a9336cd8c23ab3dffc7864ce8\", \"reports/e2/platform-windows-amd64.json\": \"fbf387c2c252a9d93415e19c9ef93045acd3702ba644a210e20bada46aa86021\"}"
+    },
+    {
+      "name": "e21-v2-schemas",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.0,
+      "output_sha256": "06069e976128e6f1f7e7848a69cdbac7c77dabd190a97069c2949adc424482c8",
+      "output": "{\"e2.1-evidence-bundle-v1.schema.json\": \"planet-engine/e2.1-evidence-bundle-v1\", \"e2.1-platform-report-v1.schema.json\": \"planet-engine/e2.1-platform-report-v1\", \"generation-spec-v2.schema.json\": \"planet-engine/generation-spec-v2\", \"m1-input-release-v2.schema.json\": \"planet-engine/m1-input-release-v2\", \"spatial-release-v2.schema.json\": \"planet-engine/spatial-release-v2\", \"tectonics-release-v2.schema.json\": \"planet-engine/tectonics-release-v2\", \"world-intent-spec-v2.schema.json\": \"planet-engine/world-intent-spec-v2\"}"
+    },
+    {
+      "name": "e21-fixture-audit",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.0,
+      "output_sha256": "d0e435f8f7238ad36b938bcdfdf644da293693858cbdcc4e4449c94ca63304a0",
+      "output": "{\"fixture_ids\": [\"E21-B01\", \"E21-I01\", \"E21-M01\", \"E21-R01\", \"E21-S01\", \"E21-T01\", \"PCAL-E2.1-v2\", \"PVAL-E2.1-v2\"], \"fixture_paths\": [\"baselines/e2-v1-freeze.json\", \"identity/E21I01-world-kinds.json\", \"m1/E21M01-forged-claims.json\", \"spatial/E21S01-cross-face-patch.json\", \"statistical/PCAL-E2.1-v2.json\", \"statistical/PVAL-E2.1-v2.json\", \"storage/E21R01-safe-store-ids.json\", \"tectonics/E21T01-activity-metamorphic.json\"]}"
+    },
+    {
+      "name": "identity-layering",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.109,
+      "output_sha256": "3b3e7d30436acb8f4a2c1dc8c39de3dcd15a4850350b059e93e6f85916535b82",
+      "output": "\nrunning 1 test\n.\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 9 filtered out; finished in 0.00s\n\n"
+    },
+    {
+      "name": "fixed-world-isolation",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.109,
+      "output_sha256": "3b3e7d30436acb8f4a2c1dc8c39de3dcd15a4850350b059e93e6f85916535b82",
+      "output": "\nrunning 1 test\n.\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 9 filtered out; finished in 0.00s\n\n"
+    },
+    {
+      "name": "skeleton-stability",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.703,
+      "output_sha256": "5b7ba589d67eec01fcd14dd33592c8f77d789919580f120c26ae86d71768d66d",
+      "output": "\nrunning 1 test\n.\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 7 filtered out; finished in 0.57s\n\n"
+    },
+    {
+      "name": "activity-metamorphism",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 3.36,
+      "output_sha256": "f7c16ca0e6a92661b5ea707eec94a1fc8abdf4a489d3f6a84bdc59c4188890be",
+      "output": "\nrunning 1 test\n.\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 7 filtered out; finished in 3.27s\n\n"
+    },
+    {
+      "name": "boundary-separation",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 1.375,
+      "output_sha256": "3b170775146d8f08df5272d7e28106024316cbdd4fee9a74d45d43d6e9d3ad6a",
+      "output": "\nrunning 1 test\n.\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 7 filtered out; finished in 1.25s\n\n"
+    },
+    {
+      "name": "m1-self-consistency",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.125,
+      "output_sha256": "47d1cdcc75b2b02134b89b163686bdcaaaf69a9ba8cfda917675f1e3a9f1aae7",
+      "output": "\nrunning 1 test\n.\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 11 filtered out; finished in 0.00s\n\n"
+    },
+    {
+      "name": "m1-full-admission",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.109,
+      "output_sha256": "47d1cdcc75b2b02134b89b163686bdcaaaf69a9ba8cfda917675f1e3a9f1aae7",
+      "output": "\nrunning 1 test\n.\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 11 filtered out; finished in 0.00s\n\n"
+    },
+    {
+      "name": "m1-filesystem-admission",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 1.36,
+      "output_sha256": "cda94218c403b06f67d6413d4c8cd095bda4afc63605067a34fe2314762c0f15",
+      "output": "\nrunning 1 test\n.\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 11 filtered out; finished in 1.24s\n\n"
+    },
+    {
+      "name": "edge-geometry",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.125,
+      "output_sha256": "d55675692436ca808456f754c06f88b89cc5ec01b8241d8d1b6ea7210be26bd8",
+      "output": "\nrunning 1 test\n.\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 4 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 15 filtered out; finished in 0.00s\n\n"
+    },
+    {
+      "name": "query-semantics",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.109,
+      "output_sha256": "d55675692436ca808456f754c06f88b89cc5ec01b8241d8d1b6ea7210be26bd8",
+      "output": "\nrunning 1 test\n.\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 4 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 15 filtered out; finished in 0.00s\n\n"
+    },
+    {
+      "name": "patch-reconstruction",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.109,
+      "output_sha256": "d55675692436ca808456f754c06f88b89cc5ec01b8241d8d1b6ea7210be26bd8",
+      "output": "\nrunning 1 test\n.\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 4 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 15 filtered out; finished in 0.00s\n\n"
+    },
+    {
+      "name": "deterministic-numeric",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.141,
+      "output_sha256": "aeb47d923097d9e643d21f51e469edcdb226409947d5f4881fffff31c1171487",
+      "output": "\nrunning 4 tests\n....\ntest result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n"
+    },
+    {
+      "name": "parallel-metamorphism",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 2.484,
+      "output_sha256": "79ab4770ed79e7a5653b0797db8b9c1dc3b8b88f9bb2d5dbeb28cd520e06fe6f",
+      "output": "\nrunning 1 test\n.\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 7 filtered out; finished in 2.37s\n\n"
+    },
+    {
+      "name": "store-semantics",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.219,
+      "output_sha256": "e7afa765c737abedfa359fd8a7ea4acccb619ee95e3b73c78171cbfa5a6a92ab",
+      "output": "\nrunning 9 tests\n.........\ntest result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n"
+    },
+    {
+      "name": "pcal-execution",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 13.891,
+      "output_sha256": "a54350e4e0f53e44a77012eacc610ffdbb7dcf4da1fea032978d3c875a798f94",
+      "output": "{\"evidence_sha256\":\"97c04f4e62591484e4054b4a54396d293d67c3bfb71f8e96d68336370e1c0ee4\",\"fixture_id\":\"PCAL-E2.1-v2\",\"pass\":true,\"purpose\":\"CALIBRATION\",\"schema\":\"e2.1-seed-suite-evidence-v1\",\"shard_count\":32,\"worker_count\":2,\"world_count\":32,\"worlds\":[{\"owners_sha256\":\"c8dc2f631bcf74a485c8bf00877e752f2d0e3c430a917a0c505b3a0cb214fc31\",\"plate_count\":9,\"seed\":\"E21-PCAL-01\",\"tectonic_skeleton_id\":\"skeleton-v2-b8708e16e149f8f0ee1c206b\",\"world_id\":\"world-v2-53f2f2ef4953cf94d4d452d8\"},{\"owners_sha256\":\"803583239eb978bd3e1a99f143dcfd9aa6d8b70bbba16497d2cf7363d154fa0d\",\"plate_count\":8,\"seed\":\"E21-PCAL-02\",\"tectonic_skeleton_id\":\"skeleton-v2-7505937d8870302c5cc20b74\",\"world_id\":\"world-v2-1a42efdc54697ff893adf62a\"},{\"owners_sha256\":\"a0c8c74b80873491fee174929dfd831b4b19d25547805a1b2e07e1e18213035e\",\"plate_count\":9,\"seed\":\"E21-PCAL-03\",\"tectonic_skeleton_id\":\"skeleton-v2-fc7a8f601d6670ee084918d0\",\"world_id\":\"world-v2-66c083a35ecf2860496327c2\"},{\"owners_sha256\":\"d04d0abaf5ad99735fadc2ccacf897cba1042d3131b58ec82bcb4d79a0622596\",\"plate_count\":9,\"seed\":\"E21-PCAL-04\",\"tectonic_skeleton_id\":\"skeleton-v2-14943a7604cbb5528c2eb3ca\",\"world_id\":\"world-v2-5e293dd8de601125b7bb2a42\"},{\"owners_sha256\":\"5712d8d2545621f254883168dcfd95df847d475fea072884656522477c592402\",\"plate_count\":10,\"seed\":\"E21-PCAL-05\",\"tectonic_skeleton_id\":\"skeleton-v2-6eae8e5189a42a4c07093d01\",\"world_id\":\"world-v2-e7214f582346001beb2d2a4f\"},{\"owners_sha256\":\"6bde2d4458bcf59f0d52a75a3d03c15817def6f684b3fc9bc830d11d7b41509c\",\"plate_count\":9,\"seed\":\"E21-PCAL-06\",\"tectonic_skeleton_id\":\"skeleton-v2-9be66ad0650f338049e6fd92\",\"world_id\":\"world-v2-3fd363f682cbcee932473f67\"},{\"owners_sha256\":\"08b33c1185a84283175d9d4031987debc2539fc13de9b49e1ef157f41eea723a\",\"plate_count\":10,\"seed\":\"E21-PCAL-07\",\"tectonic_skeleton_id\":\"skeleton-v2-6ed7de13c2e0df26bd4cace9\",\"world_id\":\"world-v2-eff599bea124c5afbb95347f\"},{\"owners_sha256\":\"df0a1feda92ddb59582ffc6b119d646a09d9e1516d74eb8e687f6563d0483e91\",\"plate_count\":8,\"seed\":\"E21-PCAL-08\",\"tectonic_skeleton_id\":\"skeleton-v2-188afb9d35707c1ef05803f7\",\"world_id\":\"world-v2-e1596712a7795e6205039601\"},{\"owners_sha256\":\"00fac9b1fa2e1c53321fe1ccb3d5edcebe0170d60adc35e2d13e7bd89e559cda\",\"plate_count\":10,\"seed\":\"E21-PCAL-09\",\"tectonic_skeleton_id\":\"skeleton-v2-1c9271121b5264951349aa1c\",\"world_id\":\"world-v2-0c3509b89f3ff5358f14427e\"},{\"owners_sha256\":\"3ad2c6586dd2a042a9807ebd7c188abc3091b1bb4955147b1b1e72e000063678\",\"plate_count\":8,\"seed\":\"E21-PCAL-10\",\"tectonic_skeleton_id\":\"skeleton-v2-a1d1316223be2cf2287f64ea\",\"world_id\":\"world-v2-956f90be6f1dd0c3fd74d4fe\"},{\"owners_sha256\":\"9fff939883b6f259360da5b8228aa3976076e06b0a7222f0d0496c3144a5c57b\",\"plate_count\":8,\"seed\":\"E21-PCAL-11\",\"tectonic_skeleton_id\":\"skeleton-v2-824449dc53c0dcda9a97a9fd\",\"world_id\":\"world-v2-7f037984ddd8c695ac38bc0c\"},{\"owners_sha256\":\"9c327dd7336d59fbfdb4b450d89cdbb0af312318a750cb2d1e1b29cbeffc9f6d\",\"plate_count\":9,\"seed\":\"E21-PCAL-12\",\"tectonic_skeleton_id\":\"skeleton-v2-69991598d5cee4bbc51efa69\",\"world_id\":\"world-v2-0be41f289fd83f95202eca75\"},{\"owners_sha256\":\"9cf63629cc5a7fd11a8683e430e084313ddced7d4bd3334bf9ab264f0db32883\",\"plate_count\":9,\"seed\":\"E21-PCAL-13\",\"tectonic_skeleton_id\":\"skeleton-v2-74f384cddfdcf018e8cf5686\",\"world_id\":\"world-v2-7076783b21c06a0e734bbd09\"},{\"owners_sha256\":\"68b5aa09a423b55cf91e9fc19286a19af1d82e6e59a20669f6f5f4525d0fd559\",\"plate_count\":9,\"seed\":\"E21-PCAL-14\",\"tectonic_skeleton_id\":\"skeleton-v2-8f4902e788de5f82a1aac228\",\"world_id\":\"world-v2-da2f9c20413acbf43b56c063\"},{\"owners_sha256\":\"a7f7899b66e756968d07f6b25d4bc6bde12375c0d15b6a072208b7b91fea6627\",\"plate_count\":8,\"seed\":\"E21-PCAL-15\",\"tectonic_skeleton_id\":\"skeleton-v2-14258a8f9902a1629acf11bc\",\"world_id\":\"world-v2-948403ecbf2d72f28adda1a5\"},{\"owners_sha256\":\"a85a86fd48e60ee65f2d19c1d0d2e0a70537141c353ef0e19fe6933f5521e2af\",\"plate_count\":10,\"seed\":\"E21-PCAL-16\",\"tectonic_skeleton_id\":\"skeleton-v2-9ed70e31f8b44c46270f8260\",\"world_id\":\"world-v2-183a1337bfb5ef2540b433f6\"},{\"owners_sha256\":\"3d3631e4deae3d6546793f9664c49db719146a9db2e714bdb81a0533f9d25baa\",\"plate_count\":10,\"seed\":\"E21-PCAL-17\",\"tectonic_skeleton_id\":\"skeleton-v2-eb6087055171e0294d89918a\",\"world_id\":\"world-v2-4373603f8bc4029866676b0e\"},{\"owners_sha256\":\"6e6d2ba09a70d19238fd440afa66a055ede1d44ca2a4ca292bf24ff2695a44bd\",\"plate_count\":9,\"seed\":\"E21-PCAL-18\",\"tectonic_skeleton_id\":\"skeleton-v2-dc2fd00ccb2d7e4104cd6d72\",\"world_id\":\"world-v2-38c10bc7c46143269b187e9f\"},{\"owners_sha256\":\"b247f2b4641bd79084adb3589f9ae25d2d72411fac6811ad8895cbf17f97ff47\",\"plate_count\":10,\"seed\":\"E21-PCAL-19\",\"tectonic_skeleton_id\":\"skeleton-v2-0521fe460374d3dd45c51ac1\",\"world_id\":\"world-v2-9551f9db1d337c4c5e281281\"},{\"owners_sha256\":\"c1bbd8e195b44c001a36c1b7846fdcd42edbe57ec638d5ff696cda2aec5ea371\",\"plate_count\":8,\"seed\":\"E21-PCAL-20\",\"tectonic_skeleton_id\":\"skeleton-v2-01b89184e8738214a226d375\",\"world_id\":\"world-v2-0248ba6a252e31724da40a84\"},{\"owners_sha256\":\"d9691032fab91e4297f1f6286a1fe7daab092974e514f3dbb87d8546513d72ff\",\"plate_count\":8,\"seed\":\"E21-PCAL-21\",\"tectonic_skeleton_id\":\"skeleton-v2-4b7d5cb55cffc82dca7d9515\",\"world_id\":\"world-v2-c46bf616ee57edde31b65f9f\"},{\"owners_sha256\":\"e3d1284f8c8adfae6b95b2d2ae0f99755cc626ae2ccc37aa600a3408663ee304\",\"plate_count\":10,\"seed\":\"E21-PCAL-22\",\"tectonic_skeleton_id\":\"skeleton-v2-e186e9318bae69b9c6cc9fae\",\"world_id\":\"world-v2-380c80e674f8eb1029de54d0\"},{\"owners_sha256\":\"9f049bc49f2ead76ff0550b78007d85c1663f82168b08e7be2b9de3d47df9c23\",\"plate_count\":9,\"seed\":\"E21-PCAL-23\",\"tectonic_skeleton_id\":\"skeleton-v2-6ed9a416a3ee7cc67acb34b6\",\"world_id\":\"world-v2-5ec4e5da2840f4ec47cb98e1\"},{\"owners_sha256\":\"ac9adb4a1c1ecd6726a762bcf4a463a5399744f08613bf9a97b8971a0f3d60d3\",\"plate_count\":8,\"seed\":\"E21-PCAL-24\",\"tectonic_skeleton_id\":\"skeleton-v2-0a8fb12dd66bab654bc9a61a\",\"world_id\":\"world-v2-a6f0c08328554658cac45da7\"},{\"owners_sha256\":\"9cf8cb9f857723e702c897b6eb566fa8abb98a329c212b9ac91d26adbf213011\",\"plate_count\":9,\"seed\":\"E21-PCAL-25\",\"tectonic_skeleton_id\":\"skeleton-v2-5df15748648e92911d09596c\",\"world_id\":\"world-v2-d3897469b383f87717f1c9ed\"},{\"owners_sha256\":\"454970f9df28aeb9dab2194005b89367b3aa2263394c2bbf5788b32c4bc0af7a\",\"plate_count\":8,\"seed\":\"E21-PCAL-26\",\"tectonic_skeleton_id\":\"skeleton-v2-2b1d45d90ce795e2fc5f502d\",\"world_id\":\"world-v2-38240d0524467f1912707b7a\"},{\"owners_sha256\":\"fbf918d9f6fb72773cf8f7b2c48b44a2379087d7e832f28db0c0bd6dfbd098df\",\"plate_count\":8,\"seed\":\"E21-PCAL-27\",\"tectonic_skeleton_id\":\"skeleton-v2-2ced21cb570774e74fcf79f0\",\"world_id\":\"world-v2-80f21f1acd71eb6a28616a99\"},{\"owners_sha256\":\"4efd2eedf828df552557d96ef8123f8eacefc8df77e951dea855d92f926ade79\",\"plate_count\":8,\"seed\":\"E21-PCAL-28\",\"tectonic_skeleton_id\":\"skeleton-v2-acbc1ebe9114ea8c4affcddf\",\"world_id\":\"world-v2-6d36b9769adce902e5424a55\"},{\"owners_sha256\":\"60d072583ad21b0c8548f926a27e57aed6b755803e29eb381508d582fbdf0179\",\"plate_count\":8,\"seed\":\"E21-PCAL-29\",\"tectonic_skeleton_id\":\"skeleton-v2-761e949e99d14e08dfa127a5\",\"world_id\":\"world-v2-114b51560220a1d115c3c487\"},{\"owners_sha256\":\"347b1831403eb7af7bdbf415d21a9f8f167bf0f050856351d6ea543c9a1a9fe0\",\"plate_count\":10,\"seed\":\"E21-PCAL-30\",\"tectonic_skeleton_id\":\"skeleton-v2-6a4e0ff404b3ea8a75c1d151\",\"world_id\":\"world-v2-f644156602cbbd29b789c73c\"},{\"owners_sha256\":\"bb79a000ae521135dcafc0f13876660ba249b84f313971ac1845ce9a6392c9ac\",\"plate_count\":10,\"seed\":\"E21-PCAL-31\",\"tectonic_skeleton_id\":\"skeleton-v2-ae7cfeeed87367499e7a3754\",\"world_id\":\"world-v2-1c4e3433685b6adf60f004d0\"},{\"owners_sha256\":\"eac3a183d255407585efdd263dcc0b795f848c705ac4400cde230bbc419c4944\",\"plate_count\":10,\"seed\":\"E21-PCAL-32\",\"tectonic_skeleton_id\":\"skeleton-v2-9ba45e09de39d96ea657fc63\",\"world_id\":\"world-v2-487aed7648924d85504fead8\"}]}\n"
+    },
+    {
+      "name": "pval-execution",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 14.468,
+      "output_sha256": "004d3fba1d984f4d2383cd82d13546c58e655434579b279ba8251a9def66d606",
+      "output": "{\"evidence_sha256\":\"284f11f009357f0769f3f953187c47ad5feb9598a7e14aa12a414600c23617c2\",\"fixture_id\":\"PVAL-E2.1-v2\",\"pass\":true,\"purpose\":\"VALIDATION\",\"schema\":\"e2.1-seed-suite-evidence-v1\",\"shard_count\":32,\"worker_count\":2,\"world_count\":32,\"worlds\":[{\"owners_sha256\":\"c2af0b35f939498bf143b9b87dbae95da57762d3295b2851dad995c8531be1ec\",\"plate_count\":10,\"seed\":\"E21-PVAL-01\",\"tectonic_skeleton_id\":\"skeleton-v2-41bab3029e0b4968487f82de\",\"world_id\":\"world-v2-058cda2b8e67167d86eefd5f\"},{\"owners_sha256\":\"74c36f83d1723c246b2e1468795013514f7970cd815fa3377ca18912110f7dd5\",\"plate_count\":10,\"seed\":\"E21-PVAL-02\",\"tectonic_skeleton_id\":\"skeleton-v2-03e8607e00630a3d7e87ba93\",\"world_id\":\"world-v2-8547634a5b1a9bdc6a2b71c5\"},{\"owners_sha256\":\"9d61152aac4f64e73798ade58354f53bdd36f059e8b6a985bd31c6ebf4c64f90\",\"plate_count\":9,\"seed\":\"E21-PVAL-03\",\"tectonic_skeleton_id\":\"skeleton-v2-0b7396d7b9be2c5939d0aaf0\",\"world_id\":\"world-v2-20eeb0d8992c2a9bfa2e6931\"},{\"owners_sha256\":\"073bdeb8fb3f173eafaa36771358b596aa051c2de9e7da301f0e40844ba094e0\",\"plate_count\":8,\"seed\":\"E21-PVAL-04\",\"tectonic_skeleton_id\":\"skeleton-v2-d00f7e9b187b816a72e67a07\",\"world_id\":\"world-v2-0e89b25d56ee72a471555da3\"},{\"owners_sha256\":\"b5f04e489d3cee3bf463b7374646f57ec94d789f1d252468c9c87284af52ada0\",\"plate_count\":10,\"seed\":\"E21-PVAL-05\",\"tectonic_skeleton_id\":\"skeleton-v2-07e41f4b9215765e293c3393\",\"world_id\":\"world-v2-be2c0c536db7d2f9e7ad731c\"},{\"owners_sha256\":\"9f45908a886b2698383867640efd6014cce2e6efd4bbc6d84b363e0ccec88c7e\",\"plate_count\":9,\"seed\":\"E21-PVAL-06\",\"tectonic_skeleton_id\":\"skeleton-v2-548690cec934a62465e117e2\",\"world_id\":\"world-v2-33a049ce9e1b580a113199b3\"},{\"owners_sha256\":\"c7a6b956dac3a18a5efceb83e07db326040a018f4957ecca7aa600228aa73228\",\"plate_count\":10,\"seed\":\"E21-PVAL-07\",\"tectonic_skeleton_id\":\"skeleton-v2-14ac34e0c0abe7b7e6efff82\",\"world_id\":\"world-v2-99cb2a79ab4ac2a774fcf8b4\"},{\"owners_sha256\":\"3e09d17c248d13dd78402c9b4d8c7fcb26264f519f39d6e209cf8e2793b9c8eb\",\"plate_count\":8,\"seed\":\"E21-PVAL-08\",\"tectonic_skeleton_id\":\"skeleton-v2-8320336461763636d69b36d8\",\"world_id\":\"world-v2-ca9dda76d17056014aa31cc7\"},{\"owners_sha256\":\"235d3595d42cb3370bc37751c825afdcc9e0f5a995dc281953ea9848dc6d097f\",\"plate_count\":9,\"seed\":\"E21-PVAL-09\",\"tectonic_skeleton_id\":\"skeleton-v2-c3a45209077dd08f5c5b6925\",\"world_id\":\"world-v2-fbb3a6585cb684245d2800b7\"},{\"owners_sha256\":\"5d65c405b1c8f251b018ba5ff3c3fa68a12e1845bf2d9aeb431e6d1915c3692f\",\"plate_count\":10,\"seed\":\"E21-PVAL-10\",\"tectonic_skeleton_id\":\"skeleton-v2-9fd8777443eee071e8dfd430\",\"world_id\":\"world-v2-e89e50cd08a3d33c4ce9dacd\"},{\"owners_sha256\":\"8db190032f6908ce9742208a6bbf4ef5fb1a42586ca9b41ae7d855a0e28c80ff\",\"plate_count\":10,\"seed\":\"E21-PVAL-11\",\"tectonic_skeleton_id\":\"skeleton-v2-6f191b1058389b54b002d004\",\"world_id\":\"world-v2-bfb327ab2533110a7759913d\"},{\"owners_sha256\":\"e815a7b871c7ed90567d881816c9fc971778cbe7e95a6ba5c1129cb74bf74875\",\"plate_count\":10,\"seed\":\"E21-PVAL-12\",\"tectonic_skeleton_id\":\"skeleton-v2-5876e2741bf81c972d0f209b\",\"world_id\":\"world-v2-18a4ec2fb3de4bfaf83229ad\"},{\"owners_sha256\":\"4207867b5c2f54be72f009049df837a3f6804df17498a1d2dd668a6dfd140e2d\",\"plate_count\":9,\"seed\":\"E21-PVAL-13\",\"tectonic_skeleton_id\":\"skeleton-v2-18144c972a193f3aafccbc7e\",\"world_id\":\"world-v2-d4e817c5518fa747b248f8fc\"},{\"owners_sha256\":\"92686089adacce21e621f1b002c4ae7398a1d39be770336e6c057d4c18213187\",\"plate_count\":9,\"seed\":\"E21-PVAL-14\",\"tectonic_skeleton_id\":\"skeleton-v2-f39fb2d7ec908b4529199b67\",\"world_id\":\"world-v2-571e1e5a58c0bd3a041cb09f\"},{\"owners_sha256\":\"84a10bea5cb089061bf497e5a53e9ffb04d23552dc2f218018b4ea8f4dfac9e5\",\"plate_count\":9,\"seed\":\"E21-PVAL-15\",\"tectonic_skeleton_id\":\"skeleton-v2-7679dac5b4d490354adc82c2\",\"world_id\":\"world-v2-86b61c04da0e9397b5b4c7a1\"},{\"owners_sha256\":\"b0702bc29b2c0bc7962c01b15e6bb1211a35d5360c386c08279366beb2a88c09\",\"plate_count\":10,\"seed\":\"E21-PVAL-16\",\"tectonic_skeleton_id\":\"skeleton-v2-ab8d35bae386024c80dc843d\",\"world_id\":\"world-v2-75b12a9b2b642a7f1508e018\"},{\"owners_sha256\":\"14e40afc1ddc2a8e7e82c3dbd2da9465b485bcbdcc8eb683feb47e8353a5504a\",\"plate_count\":10,\"seed\":\"E21-PVAL-17\",\"tectonic_skeleton_id\":\"skeleton-v2-bff53fc0207abfc3c429f32c\",\"world_id\":\"world-v2-e32eff3f203121c5cd5ef182\"},{\"owners_sha256\":\"d0d95a647a7f95957f7e5afeed619aae4a06b34ecfa2725267ecc5c28b590722\",\"plate_count\":8,\"seed\":\"E21-PVAL-18\",\"tectonic_skeleton_id\":\"skeleton-v2-1ba9770c8cf04f13e4c396c5\",\"world_id\":\"world-v2-771474e6b93c04247b8a6973\"},{\"owners_sha256\":\"26b8fdeab5ab7680e2431682ab0f0d51dd89839464c33dd2ffe5cfb6c708ff5a\",\"plate_count\":8,\"seed\":\"E21-PVAL-19\",\"tectonic_skeleton_id\":\"skeleton-v2-df11d95481df991e3f883315\",\"world_id\":\"world-v2-673b71aaeb9f1f755b88a694\"},{\"owners_sha256\":\"89024ae42129ec0b1bc0799211da707e8cef76f080cfa1b0b0a677381c745a94\",\"plate_count\":10,\"seed\":\"E21-PVAL-20\",\"tectonic_skeleton_id\":\"skeleton-v2-20443a5c76906d73d58c1692\",\"world_id\":\"world-v2-df14523205d36e4cc914ba8d\"},{\"owners_sha256\":\"6b95eff2216e14c06d22b92890cfa5906f0eb262108291653fb0a3d4eabb7ff1\",\"plate_count\":9,\"seed\":\"E21-PVAL-21\",\"tectonic_skeleton_id\":\"skeleton-v2-7399b126d4402583b52b9146\",\"world_id\":\"world-v2-11c7752ef7f9c7f63839ce12\"},{\"owners_sha256\":\"aaf3e50b3f15f24be2915a1e48b1d7e815fb2afb8a1a8888cd43332e8b4edd75\",\"plate_count\":10,\"seed\":\"E21-PVAL-22\",\"tectonic_skeleton_id\":\"skeleton-v2-fd1cf8f33af25ce419e21ddf\",\"world_id\":\"world-v2-680618fa6b24c535b88620b0\"},{\"owners_sha256\":\"280b4b84f4df284d82d0e227770704514628d71cc25ae4287cd98e22a79f3a14\",\"plate_count\":9,\"seed\":\"E21-PVAL-23\",\"tectonic_skeleton_id\":\"skeleton-v2-e4922d7c949c86e5005c9b81\",\"world_id\":\"world-v2-c12bfcc05927d268543e9b59\"},{\"owners_sha256\":\"c0c6d3a27b9d3bba50763f6abbb89936e750395af8ede94eb6dc66328bd416ba\",\"plate_count\":8,\"seed\":\"E21-PVAL-24\",\"tectonic_skeleton_id\":\"skeleton-v2-a23ed3c478e214500a616383\",\"world_id\":\"world-v2-78c179fd039721c44b29b994\"},{\"owners_sha256\":\"c0dc2471fb72a76e9b334db0c7041657dafb9d877144fdbd2d7bf4cbdbff9c10\",\"plate_count\":10,\"seed\":\"E21-PVAL-25\",\"tectonic_skeleton_id\":\"skeleton-v2-9649ed16bf4fb10900b715db\",\"world_id\":\"world-v2-7f95d65e357b6b81121338b9\"},{\"owners_sha256\":\"d81bfcb85bf12e56b295302319b92cced3aef173ce7a636217b93170c40298bf\",\"plate_count\":8,\"seed\":\"E21-PVAL-26\",\"tectonic_skeleton_id\":\"skeleton-v2-433a5d0f79b113ae418f33e3\",\"world_id\":\"world-v2-647a99a7be5060f5f7b90f41\"},{\"owners_sha256\":\"4d67587085876f59bdc749eead39725724a653457d09ee2e834234adabbbf188\",\"plate_count\":8,\"seed\":\"E21-PVAL-27\",\"tectonic_skeleton_id\":\"skeleton-v2-ff61c83fdc2ee008900b6489\",\"world_id\":\"world-v2-63607bca877bc043588ba026\"},{\"owners_sha256\":\"e7edeb618c58f86be98452a9c7802002409931332508ed4fc5b2c45f704d915e\",\"plate_count\":8,\"seed\":\"E21-PVAL-28\",\"tectonic_skeleton_id\":\"skeleton-v2-02370a22318a7e216cbf1ab4\",\"world_id\":\"world-v2-d19aaae3f9f5485ae13fd988\"},{\"owners_sha256\":\"8dc7f4f4ff5f0b7108e2e5a5deb18aceba34d305f6414cd334620e19174baee5\",\"plate_count\":10,\"seed\":\"E21-PVAL-29\",\"tectonic_skeleton_id\":\"skeleton-v2-da44a66550287b733bb58c4c\",\"world_id\":\"world-v2-e749cc4da42c3d1b6f0a4675\"},{\"owners_sha256\":\"3728d297b47bf1b4bc5e85b6e57f2d69f49f8fb89ccdc72e83158a2cac8716c1\",\"plate_count\":10,\"seed\":\"E21-PVAL-30\",\"tectonic_skeleton_id\":\"skeleton-v2-26402dbcdeaea53f63d24674\",\"world_id\":\"world-v2-59345c37d1e573171e2ed464\"},{\"owners_sha256\":\"02a387510f572e4b94716677958d8813ef8765a9844cca9e6341a11017b9940a\",\"plate_count\":10,\"seed\":\"E21-PVAL-31\",\"tectonic_skeleton_id\":\"skeleton-v2-d92407227ce0e8267992fcb7\",\"world_id\":\"world-v2-b1d2e8d8b8538b3401e3b8ca\"},{\"owners_sha256\":\"e6c207f4c5e010fd5e04af07624bb0cb85a7dc8a267546be347d43785525e1a1\",\"plate_count\":9,\"seed\":\"E21-PVAL-32\",\"tectonic_skeleton_id\":\"skeleton-v2-eb270bf1b37ef0d884f89a34\",\"world_id\":\"world-v2-a9cc3f59c7744f98e52ad568\"}]}\n"
+    },
+    {
+      "name": "cargo-fmt",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.266,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": ""
+    },
+    {
+      "name": "cargo-clippy",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.25,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": ""
+    },
+    {
+      "name": "cargo-test-release",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 6.797,
+      "output_sha256": "0a42f3cbaa584fc839dd23ccc50660ec704360f0b9b53715864e61319194da20",
+      "output": "\nrunning 4 tests\n....\ntest result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 4 tests\n....\ntest result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 4 tests\n....\ntest result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 9 tests\n.........\ntest result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s\n\n\nrunning 5 tests\n.....\ntest result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 15 tests\n...............\ntest result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.29s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 4 tests\n....\ntest result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s\n\n\nrunning 5 tests\n.....\ntest result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.24s\n\n\nrunning 8 tests\n........\ntest result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.46s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 4 tests\n....\ntest result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.06s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 12 tests\n............\ntest result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.28s\n\n\nrunning 3 tests\n...\ntest result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 11 tests\n...........\ntest result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 10 tests\n..........\ntest result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n"
+    },
+    {
+      "name": "python-oracle",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.172,
+      "output_sha256": "acf95c314a0467e64e042c63b94782dadb3bd9e9b0b8e46891b2279c2ac8a54d",
+      "output": "test_child_areas_close_to_parent (test_oracle.OracleTests.test_child_areas_close_to_parent) ... ok\ntest_cubed_sphere_area_closes_independently (test_oracle.OracleTests.test_cubed_sphere_area_closes_independently) ... ok\ntest_e21_half_even_integer_vectors (test_oracle.OracleTests.test_e21_half_even_integer_vectors) ... ok\ntest_e21_legacy_baseline_protects_frozen_assets (test_oracle.OracleTests.test_e21_legacy_baseline_protects_frozen_assets) ... ok\ntest_e21_schema_skeletons_are_self_describing (test_oracle.OracleTests.test_e21_schema_skeletons_are_self_describing) ... ok\ntest_e21_u53_range_vectors (test_oracle.OracleTests.test_e21_u53_range_vectors) ... ok\ntest_e2_euler_velocity_analytic_vector (test_oracle.OracleTests.test_e2_euler_velocity_analytic_vector) ... ok\ntest_e2_integer_boundary_classification (test_oracle.OracleTests.test_e2_integer_boundary_classification) ... ok\ntest_e2_named_random_fixed_vector (test_oracle.OracleTests.test_e2_named_random_fixed_vector) ... ok\ntest_e2_seed_normalization (test_oracle.OracleTests.test_e2_seed_normalization) ... ok\ntest_equiangular_vectors_are_unit_length (test_oracle.OracleTests.test_equiangular_vectors_are_unit_length) ... ok\ntest_full_ramp (test_oracle.OracleTests.test_full_ramp) ... ok\ntest_half_ramp (test_oracle.OracleTests.test_half_ramp) ... ok\ntest_unit_sphere_area (test_oracle.OracleTests.test_unit_sphere_area) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.078s\n\nOK\n"
+    },
+    {
+      "name": "cargo-build-cli",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.125,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": ""
+    },
+    {
+      "name": "e21-cli-workflow",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.0,
+      "output_sha256": "4672540c343174348a58a163e776995aead06b63d7378febc81444ca7e87a569",
+      "output": "{\"generation_identity\": \"generation-v2-e565165e642264b8338e1ae3\", \"m1_admission\": \"DIAGNOSTIC_ONLY\", \"m1_release_sha256\": \"35f8eb0c02785fb7fae639033b8f0ec760014f5248b90376b98dc759d73df36d\", \"spatial_manifest_sha256\": \"8dda28a793964ede29e80eab26e66be9bbf0b1f1919afaea0207d33438c1fc47\", \"tectonic_manifest_sha256\": \"ecd9479a7be776060349b736730f4cfd1e37b10319a149a0d4804e726b4905b8\", \"validations\": {\"m1\": \"VALID\", \"spatial\": \"VALID\", \"tectonic\": \"VALID\", \"world\": \"VALID\"}, \"world_id\": \"world-v2-9eafb72921c75f240148f75d\"}"
+    }
+  ],
+  "authoritative_evidence": {
+    "stage": "E2.1-platform-candidate",
+    "stage_pass": true,
+    "pcal_evidence_sha256": "97c04f4e62591484e4054b4a54396d293d67c3bfb71f8e96d68336370e1c0ee4",
+    "pval_evidence_sha256": "284f11f009357f0769f3f953187c47ad5feb9598a7e14aa12a414600c23617c2",
+    "pcal_worlds": [
+      {
+        "owners_sha256": "c8dc2f631bcf74a485c8bf00877e752f2d0e3c430a917a0c505b3a0cb214fc31",
+        "plate_count": 9,
+        "seed": "E21-PCAL-01",
+        "tectonic_skeleton_id": "skeleton-v2-b8708e16e149f8f0ee1c206b",
+        "world_id": "world-v2-53f2f2ef4953cf94d4d452d8"
+      },
+      {
+        "owners_sha256": "803583239eb978bd3e1a99f143dcfd9aa6d8b70bbba16497d2cf7363d154fa0d",
+        "plate_count": 8,
+        "seed": "E21-PCAL-02",
+        "tectonic_skeleton_id": "skeleton-v2-7505937d8870302c5cc20b74",
+        "world_id": "world-v2-1a42efdc54697ff893adf62a"
+      },
+      {
+        "owners_sha256": "a0c8c74b80873491fee174929dfd831b4b19d25547805a1b2e07e1e18213035e",
+        "plate_count": 9,
+        "seed": "E21-PCAL-03",
+        "tectonic_skeleton_id": "skeleton-v2-fc7a8f601d6670ee084918d0",
+        "world_id": "world-v2-66c083a35ecf2860496327c2"
+      },
+      {
+        "owners_sha256": "d04d0abaf5ad99735fadc2ccacf897cba1042d3131b58ec82bcb4d79a0622596",
+        "plate_count": 9,
+        "seed": "E21-PCAL-04",
+        "tectonic_skeleton_id": "skeleton-v2-14943a7604cbb5528c2eb3ca",
+        "world_id": "world-v2-5e293dd8de601125b7bb2a42"
+      },
+      {
+        "owners_sha256": "5712d8d2545621f254883168dcfd95df847d475fea072884656522477c592402",
+        "plate_count": 10,
+        "seed": "E21-PCAL-05",
+        "tectonic_skeleton_id": "skeleton-v2-6eae8e5189a42a4c07093d01",
+        "world_id": "world-v2-e7214f582346001beb2d2a4f"
+      },
+      {
+        "owners_sha256": "6bde2d4458bcf59f0d52a75a3d03c15817def6f684b3fc9bc830d11d7b41509c",
+        "plate_count": 9,
+        "seed": "E21-PCAL-06",
+        "tectonic_skeleton_id": "skeleton-v2-9be66ad0650f338049e6fd92",
+        "world_id": "world-v2-3fd363f682cbcee932473f67"
+      },
+      {
+        "owners_sha256": "08b33c1185a84283175d9d4031987debc2539fc13de9b49e1ef157f41eea723a",
+        "plate_count": 10,
+        "seed": "E21-PCAL-07",
+        "tectonic_skeleton_id": "skeleton-v2-6ed7de13c2e0df26bd4cace9",
+        "world_id": "world-v2-eff599bea124c5afbb95347f"
+      },
+      {
+        "owners_sha256": "df0a1feda92ddb59582ffc6b119d646a09d9e1516d74eb8e687f6563d0483e91",
+        "plate_count": 8,
+        "seed": "E21-PCAL-08",
+        "tectonic_skeleton_id": "skeleton-v2-188afb9d35707c1ef05803f7",
+        "world_id": "world-v2-e1596712a7795e6205039601"
+      },
+      {
+        "owners_sha256": "00fac9b1fa2e1c53321fe1ccb3d5edcebe0170d60adc35e2d13e7bd89e559cda",
+        "plate_count": 10,
+        "seed": "E21-PCAL-09",
+        "tectonic_skeleton_id": "skeleton-v2-1c9271121b5264951349aa1c",
+        "world_id": "world-v2-0c3509b89f3ff5358f14427e"
+      },
+      {
+        "owners_sha256": "3ad2c6586dd2a042a9807ebd7c188abc3091b1bb4955147b1b1e72e000063678",
+        "plate_count": 8,
+        "seed": "E21-PCAL-10",
+        "tectonic_skeleton_id": "skeleton-v2-a1d1316223be2cf2287f64ea",
+        "world_id": "world-v2-956f90be6f1dd0c3fd74d4fe"
+      },
+      {
+        "owners_sha256": "9fff939883b6f259360da5b8228aa3976076e06b0a7222f0d0496c3144a5c57b",
+        "plate_count": 8,
+        "seed": "E21-PCAL-11",
+        "tectonic_skeleton_id": "skeleton-v2-824449dc53c0dcda9a97a9fd",
+        "world_id": "world-v2-7f037984ddd8c695ac38bc0c"
+      },
+      {
+        "owners_sha256": "9c327dd7336d59fbfdb4b450d89cdbb0af312318a750cb2d1e1b29cbeffc9f6d",
+        "plate_count": 9,
+        "seed": "E21-PCAL-12",
+        "tectonic_skeleton_id": "skeleton-v2-69991598d5cee4bbc51efa69",
+        "world_id": "world-v2-0be41f289fd83f95202eca75"
+      },
+      {
+        "owners_sha256": "9cf63629cc5a7fd11a8683e430e084313ddced7d4bd3334bf9ab264f0db32883",
+        "plate_count": 9,
+        "seed": "E21-PCAL-13",
+        "tectonic_skeleton_id": "skeleton-v2-74f384cddfdcf018e8cf5686",
+        "world_id": "world-v2-7076783b21c06a0e734bbd09"
+      },
+      {
+        "owners_sha256": "68b5aa09a423b55cf91e9fc19286a19af1d82e6e59a20669f6f5f4525d0fd559",
+        "plate_count": 9,
+        "seed": "E21-PCAL-14",
+        "tectonic_skeleton_id": "skeleton-v2-8f4902e788de5f82a1aac228",
+        "world_id": "world-v2-da2f9c20413acbf43b56c063"
+      },
+      {
+        "owners_sha256": "a7f7899b66e756968d07f6b25d4bc6bde12375c0d15b6a072208b7b91fea6627",
+        "plate_count": 8,
+        "seed": "E21-PCAL-15",
+        "tectonic_skeleton_id": "skeleton-v2-14258a8f9902a1629acf11bc",
+        "world_id": "world-v2-948403ecbf2d72f28adda1a5"
+      },
+      {
+        "owners_sha256": "a85a86fd48e60ee65f2d19c1d0d2e0a70537141c353ef0e19fe6933f5521e2af",
+        "plate_count": 10,
+        "seed": "E21-PCAL-16",
+        "tectonic_skeleton_id": "skeleton-v2-9ed70e31f8b44c46270f8260",
+        "world_id": "world-v2-183a1337bfb5ef2540b433f6"
+      },
+      {
+        "owners_sha256": "3d3631e4deae3d6546793f9664c49db719146a9db2e714bdb81a0533f9d25baa",
+        "plate_count": 10,
+        "seed": "E21-PCAL-17",
+        "tectonic_skeleton_id": "skeleton-v2-eb6087055171e0294d89918a",
+        "world_id": "world-v2-4373603f8bc4029866676b0e"
+      },
+      {
+        "owners_sha256": "6e6d2ba09a70d19238fd440afa66a055ede1d44ca2a4ca292bf24ff2695a44bd",
+        "plate_count": 9,
+        "seed": "E21-PCAL-18",
+        "tectonic_skeleton_id": "skeleton-v2-dc2fd00ccb2d7e4104cd6d72",
+        "world_id": "world-v2-38c10bc7c46143269b187e9f"
+      },
+      {
+        "owners_sha256": "b247f2b4641bd79084adb3589f9ae25d2d72411fac6811ad8895cbf17f97ff47",
+        "plate_count": 10,
+        "seed": "E21-PCAL-19",
+        "tectonic_skeleton_id": "skeleton-v2-0521fe460374d3dd45c51ac1",
+        "world_id": "world-v2-9551f9db1d337c4c5e281281"
+      },
+      {
+        "owners_sha256": "c1bbd8e195b44c001a36c1b7846fdcd42edbe57ec638d5ff696cda2aec5ea371",
+        "plate_count": 8,
+        "seed": "E21-PCAL-20",
+        "tectonic_skeleton_id": "skeleton-v2-01b89184e8738214a226d375",
+        "world_id": "world-v2-0248ba6a252e31724da40a84"
+      },
+      {
+        "owners_sha256": "d9691032fab91e4297f1f6286a1fe7daab092974e514f3dbb87d8546513d72ff",
+        "plate_count": 8,
+        "seed": "E21-PCAL-21",
+        "tectonic_skeleton_id": "skeleton-v2-4b7d5cb55cffc82dca7d9515",
+        "world_id": "world-v2-c46bf616ee57edde31b65f9f"
+      },
+      {
+        "owners_sha256": "e3d1284f8c8adfae6b95b2d2ae0f99755cc626ae2ccc37aa600a3408663ee304",
+        "plate_count": 10,
+        "seed": "E21-PCAL-22",
+        "tectonic_skeleton_id": "skeleton-v2-e186e9318bae69b9c6cc9fae",
+        "world_id": "world-v2-380c80e674f8eb1029de54d0"
+      },
+      {
+        "owners_sha256": "9f049bc49f2ead76ff0550b78007d85c1663f82168b08e7be2b9de3d47df9c23",
+        "plate_count": 9,
+        "seed": "E21-PCAL-23",
+        "tectonic_skeleton_id": "skeleton-v2-6ed9a416a3ee7cc67acb34b6",
+        "world_id": "world-v2-5ec4e5da2840f4ec47cb98e1"
+      },
+      {
+        "owners_sha256": "ac9adb4a1c1ecd6726a762bcf4a463a5399744f08613bf9a97b8971a0f3d60d3",
+        "plate_count": 8,
+        "seed": "E21-PCAL-24",
+        "tectonic_skeleton_id": "skeleton-v2-0a8fb12dd66bab654bc9a61a",
+        "world_id": "world-v2-a6f0c08328554658cac45da7"
+      },
+      {
+        "owners_sha256": "9cf8cb9f857723e702c897b6eb566fa8abb98a329c212b9ac91d26adbf213011",
+        "plate_count": 9,
+        "seed": "E21-PCAL-25",
+        "tectonic_skeleton_id": "skeleton-v2-5df15748648e92911d09596c",
+        "world_id": "world-v2-d3897469b383f87717f1c9ed"
+      },
+      {
+        "owners_sha256": "454970f9df28aeb9dab2194005b89367b3aa2263394c2bbf5788b32c4bc0af7a",
+        "plate_count": 8,
+        "seed": "E21-PCAL-26",
+        "tectonic_skeleton_id": "skeleton-v2-2b1d45d90ce795e2fc5f502d",
+        "world_id": "world-v2-38240d0524467f1912707b7a"
+      },
+      {
+        "owners_sha256": "fbf918d9f6fb72773cf8f7b2c48b44a2379087d7e832f28db0c0bd6dfbd098df",
+        "plate_count": 8,
+        "seed": "E21-PCAL-27",
+        "tectonic_skeleton_id": "skeleton-v2-2ced21cb570774e74fcf79f0",
+        "world_id": "world-v2-80f21f1acd71eb6a28616a99"
+      },
+      {
+        "owners_sha256": "4efd2eedf828df552557d96ef8123f8eacefc8df77e951dea855d92f926ade79",
+        "plate_count": 8,
+        "seed": "E21-PCAL-28",
+        "tectonic_skeleton_id": "skeleton-v2-acbc1ebe9114ea8c4affcddf",
+        "world_id": "world-v2-6d36b9769adce902e5424a55"
+      },
+      {
+        "owners_sha256": "60d072583ad21b0c8548f926a27e57aed6b755803e29eb381508d582fbdf0179",
+        "plate_count": 8,
+        "seed": "E21-PCAL-29",
+        "tectonic_skeleton_id": "skeleton-v2-761e949e99d14e08dfa127a5",
+        "world_id": "world-v2-114b51560220a1d115c3c487"
+      },
+      {
+        "owners_sha256": "347b1831403eb7af7bdbf415d21a9f8f167bf0f050856351d6ea543c9a1a9fe0",
+        "plate_count": 10,
+        "seed": "E21-PCAL-30",
+        "tectonic_skeleton_id": "skeleton-v2-6a4e0ff404b3ea8a75c1d151",
+        "world_id": "world-v2-f644156602cbbd29b789c73c"
+      },
+      {
+        "owners_sha256": "bb79a000ae521135dcafc0f13876660ba249b84f313971ac1845ce9a6392c9ac",
+        "plate_count": 10,
+        "seed": "E21-PCAL-31",
+        "tectonic_skeleton_id": "skeleton-v2-ae7cfeeed87367499e7a3754",
+        "world_id": "world-v2-1c4e3433685b6adf60f004d0"
+      },
+      {
+        "owners_sha256": "eac3a183d255407585efdd263dcc0b795f848c705ac4400cde230bbc419c4944",
+        "plate_count": 10,
+        "seed": "E21-PCAL-32",
+        "tectonic_skeleton_id": "skeleton-v2-9ba45e09de39d96ea657fc63",
+        "world_id": "world-v2-487aed7648924d85504fead8"
+      }
+    ],
+    "pval_worlds": [
+      {
+        "owners_sha256": "c2af0b35f939498bf143b9b87dbae95da57762d3295b2851dad995c8531be1ec",
+        "plate_count": 10,
+        "seed": "E21-PVAL-01",
+        "tectonic_skeleton_id": "skeleton-v2-41bab3029e0b4968487f82de",
+        "world_id": "world-v2-058cda2b8e67167d86eefd5f"
+      },
+      {
+        "owners_sha256": "74c36f83d1723c246b2e1468795013514f7970cd815fa3377ca18912110f7dd5",
+        "plate_count": 10,
+        "seed": "E21-PVAL-02",
+        "tectonic_skeleton_id": "skeleton-v2-03e8607e00630a3d7e87ba93",
+        "world_id": "world-v2-8547634a5b1a9bdc6a2b71c5"
+      },
+      {
+        "owners_sha256": "9d61152aac4f64e73798ade58354f53bdd36f059e8b6a985bd31c6ebf4c64f90",
+        "plate_count": 9,
+        "seed": "E21-PVAL-03",
+        "tectonic_skeleton_id": "skeleton-v2-0b7396d7b9be2c5939d0aaf0",
+        "world_id": "world-v2-20eeb0d8992c2a9bfa2e6931"
+      },
+      {
+        "owners_sha256": "073bdeb8fb3f173eafaa36771358b596aa051c2de9e7da301f0e40844ba094e0",
+        "plate_count": 8,
+        "seed": "E21-PVAL-04",
+        "tectonic_skeleton_id": "skeleton-v2-d00f7e9b187b816a72e67a07",
+        "world_id": "world-v2-0e89b25d56ee72a471555da3"
+      },
+      {
+        "owners_sha256": "b5f04e489d3cee3bf463b7374646f57ec94d789f1d252468c9c87284af52ada0",
+        "plate_count": 10,
+        "seed": "E21-PVAL-05",
+        "tectonic_skeleton_id": "skeleton-v2-07e41f4b9215765e293c3393",
+        "world_id": "world-v2-be2c0c536db7d2f9e7ad731c"
+      },
+      {
+        "owners_sha256": "9f45908a886b2698383867640efd6014cce2e6efd4bbc6d84b363e0ccec88c7e",
+        "plate_count": 9,
+        "seed": "E21-PVAL-06",
+        "tectonic_skeleton_id": "skeleton-v2-548690cec934a62465e117e2",
+        "world_id": "world-v2-33a049ce9e1b580a113199b3"
+      },
+      {
+        "owners_sha256": "c7a6b956dac3a18a5efceb83e07db326040a018f4957ecca7aa600228aa73228",
+        "plate_count": 10,
+        "seed": "E21-PVAL-07",
+        "tectonic_skeleton_id": "skeleton-v2-14ac34e0c0abe7b7e6efff82",
+        "world_id": "world-v2-99cb2a79ab4ac2a774fcf8b4"
+      },
+      {
+        "owners_sha256": "3e09d17c248d13dd78402c9b4d8c7fcb26264f519f39d6e209cf8e2793b9c8eb",
+        "plate_count": 8,
+        "seed": "E21-PVAL-08",
+        "tectonic_skeleton_id": "skeleton-v2-8320336461763636d69b36d8",
+        "world_id": "world-v2-ca9dda76d17056014aa31cc7"
+      },
+      {
+        "owners_sha256": "235d3595d42cb3370bc37751c825afdcc9e0f5a995dc281953ea9848dc6d097f",
+        "plate_count": 9,
+        "seed": "E21-PVAL-09",
+        "tectonic_skeleton_id": "skeleton-v2-c3a45209077dd08f5c5b6925",
+        "world_id": "world-v2-fbb3a6585cb684245d2800b7"
+      },
+      {
+        "owners_sha256": "5d65c405b1c8f251b018ba5ff3c3fa68a12e1845bf2d9aeb431e6d1915c3692f",
+        "plate_count": 10,
+        "seed": "E21-PVAL-10",
+        "tectonic_skeleton_id": "skeleton-v2-9fd8777443eee071e8dfd430",
+        "world_id": "world-v2-e89e50cd08a3d33c4ce9dacd"
+      },
+      {
+        "owners_sha256": "8db190032f6908ce9742208a6bbf4ef5fb1a42586ca9b41ae7d855a0e28c80ff",
+        "plate_count": 10,
+        "seed": "E21-PVAL-11",
+        "tectonic_skeleton_id": "skeleton-v2-6f191b1058389b54b002d004",
+        "world_id": "world-v2-bfb327ab2533110a7759913d"
+      },
+      {
+        "owners_sha256": "e815a7b871c7ed90567d881816c9fc971778cbe7e95a6ba5c1129cb74bf74875",
+        "plate_count": 10,
+        "seed": "E21-PVAL-12",
+        "tectonic_skeleton_id": "skeleton-v2-5876e2741bf81c972d0f209b",
+        "world_id": "world-v2-18a4ec2fb3de4bfaf83229ad"
+      },
+      {
+        "owners_sha256": "4207867b5c2f54be72f009049df837a3f6804df17498a1d2dd668a6dfd140e2d",
+        "plate_count": 9,
+        "seed": "E21-PVAL-13",
+        "tectonic_skeleton_id": "skeleton-v2-18144c972a193f3aafccbc7e",
+        "world_id": "world-v2-d4e817c5518fa747b248f8fc"
+      },
+      {
+        "owners_sha256": "92686089adacce21e621f1b002c4ae7398a1d39be770336e6c057d4c18213187",
+        "plate_count": 9,
+        "seed": "E21-PVAL-14",
+        "tectonic_skeleton_id": "skeleton-v2-f39fb2d7ec908b4529199b67",
+        "world_id": "world-v2-571e1e5a58c0bd3a041cb09f"
+      },
+      {
+        "owners_sha256": "84a10bea5cb089061bf497e5a53e9ffb04d23552dc2f218018b4ea8f4dfac9e5",
+        "plate_count": 9,
+        "seed": "E21-PVAL-15",
+        "tectonic_skeleton_id": "skeleton-v2-7679dac5b4d490354adc82c2",
+        "world_id": "world-v2-86b61c04da0e9397b5b4c7a1"
+      },
+      {
+        "owners_sha256": "b0702bc29b2c0bc7962c01b15e6bb1211a35d5360c386c08279366beb2a88c09",
+        "plate_count": 10,
+        "seed": "E21-PVAL-16",
+        "tectonic_skeleton_id": "skeleton-v2-ab8d35bae386024c80dc843d",
+        "world_id": "world-v2-75b12a9b2b642a7f1508e018"
+      },
+      {
+        "owners_sha256": "14e40afc1ddc2a8e7e82c3dbd2da9465b485bcbdcc8eb683feb47e8353a5504a",
+        "plate_count": 10,
+        "seed": "E21-PVAL-17",
+        "tectonic_skeleton_id": "skeleton-v2-bff53fc0207abfc3c429f32c",
+        "world_id": "world-v2-e32eff3f203121c5cd5ef182"
+      },
+      {
+        "owners_sha256": "d0d95a647a7f95957f7e5afeed619aae4a06b34ecfa2725267ecc5c28b590722",
+        "plate_count": 8,
+        "seed": "E21-PVAL-18",
+        "tectonic_skeleton_id": "skeleton-v2-1ba9770c8cf04f13e4c396c5",
+        "world_id": "world-v2-771474e6b93c04247b8a6973"
+      },
+      {
+        "owners_sha256": "26b8fdeab5ab7680e2431682ab0f0d51dd89839464c33dd2ffe5cfb6c708ff5a",
+        "plate_count": 8,
+        "seed": "E21-PVAL-19",
+        "tectonic_skeleton_id": "skeleton-v2-df11d95481df991e3f883315",
+        "world_id": "world-v2-673b71aaeb9f1f755b88a694"
+      },
+      {
+        "owners_sha256": "89024ae42129ec0b1bc0799211da707e8cef76f080cfa1b0b0a677381c745a94",
+        "plate_count": 10,
+        "seed": "E21-PVAL-20",
+        "tectonic_skeleton_id": "skeleton-v2-20443a5c76906d73d58c1692",
+        "world_id": "world-v2-df14523205d36e4cc914ba8d"
+      },
+      {
+        "owners_sha256": "6b95eff2216e14c06d22b92890cfa5906f0eb262108291653fb0a3d4eabb7ff1",
+        "plate_count": 9,
+        "seed": "E21-PVAL-21",
+        "tectonic_skeleton_id": "skeleton-v2-7399b126d4402583b52b9146",
+        "world_id": "world-v2-11c7752ef7f9c7f63839ce12"
+      },
+      {
+        "owners_sha256": "aaf3e50b3f15f24be2915a1e48b1d7e815fb2afb8a1a8888cd43332e8b4edd75",
+        "plate_count": 10,
+        "seed": "E21-PVAL-22",
+        "tectonic_skeleton_id": "skeleton-v2-fd1cf8f33af25ce419e21ddf",
+        "world_id": "world-v2-680618fa6b24c535b88620b0"
+      },
+      {
+        "owners_sha256": "280b4b84f4df284d82d0e227770704514628d71cc25ae4287cd98e22a79f3a14",
+        "plate_count": 9,
+        "seed": "E21-PVAL-23",
+        "tectonic_skeleton_id": "skeleton-v2-e4922d7c949c86e5005c9b81",
+        "world_id": "world-v2-c12bfcc05927d268543e9b59"
+      },
+      {
+        "owners_sha256": "c0c6d3a27b9d3bba50763f6abbb89936e750395af8ede94eb6dc66328bd416ba",
+        "plate_count": 8,
+        "seed": "E21-PVAL-24",
+        "tectonic_skeleton_id": "skeleton-v2-a23ed3c478e214500a616383",
+        "world_id": "world-v2-78c179fd039721c44b29b994"
+      },
+      {
+        "owners_sha256": "c0dc2471fb72a76e9b334db0c7041657dafb9d877144fdbd2d7bf4cbdbff9c10",
+        "plate_count": 10,
+        "seed": "E21-PVAL-25",
+        "tectonic_skeleton_id": "skeleton-v2-9649ed16bf4fb10900b715db",
+        "world_id": "world-v2-7f95d65e357b6b81121338b9"
+      },
+      {
+        "owners_sha256": "d81bfcb85bf12e56b295302319b92cced3aef173ce7a636217b93170c40298bf",
+        "plate_count": 8,
+        "seed": "E21-PVAL-26",
+        "tectonic_skeleton_id": "skeleton-v2-433a5d0f79b113ae418f33e3",
+        "world_id": "world-v2-647a99a7be5060f5f7b90f41"
+      },
+      {
+        "owners_sha256": "4d67587085876f59bdc749eead39725724a653457d09ee2e834234adabbbf188",
+        "plate_count": 8,
+        "seed": "E21-PVAL-27",
+        "tectonic_skeleton_id": "skeleton-v2-ff61c83fdc2ee008900b6489",
+        "world_id": "world-v2-63607bca877bc043588ba026"
+      },
+      {
+        "owners_sha256": "e7edeb618c58f86be98452a9c7802002409931332508ed4fc5b2c45f704d915e",
+        "plate_count": 8,
+        "seed": "E21-PVAL-28",
+        "tectonic_skeleton_id": "skeleton-v2-02370a22318a7e216cbf1ab4",
+        "world_id": "world-v2-d19aaae3f9f5485ae13fd988"
+      },
+      {
+        "owners_sha256": "8dc7f4f4ff5f0b7108e2e5a5deb18aceba34d305f6414cd334620e19174baee5",
+        "plate_count": 10,
+        "seed": "E21-PVAL-29",
+        "tectonic_skeleton_id": "skeleton-v2-da44a66550287b733bb58c4c",
+        "world_id": "world-v2-e749cc4da42c3d1b6f0a4675"
+      },
+      {
+        "owners_sha256": "3728d297b47bf1b4bc5e85b6e57f2d69f49f8fb89ccdc72e83158a2cac8716c1",
+        "plate_count": 10,
+        "seed": "E21-PVAL-30",
+        "tectonic_skeleton_id": "skeleton-v2-26402dbcdeaea53f63d24674",
+        "world_id": "world-v2-59345c37d1e573171e2ed464"
+      },
+      {
+        "owners_sha256": "02a387510f572e4b94716677958d8813ef8765a9844cca9e6341a11017b9940a",
+        "plate_count": 10,
+        "seed": "E21-PVAL-31",
+        "tectonic_skeleton_id": "skeleton-v2-d92407227ce0e8267992fcb7",
+        "world_id": "world-v2-b1d2e8d8b8538b3401e3b8ca"
+      },
+      {
+        "owners_sha256": "e6c207f4c5e010fd5e04af07624bb0cb85a7dc8a267546be347d43785525e1a1",
+        "plate_count": 9,
+        "seed": "E21-PVAL-32",
+        "tectonic_skeleton_id": "skeleton-v2-eb270bf1b37ef0d884f89a34",
+        "world_id": "world-v2-a9cc3f59c7744f98e52ad568"
+      }
+    ],
+    "durability": "DURABILITY_NOT_PROVEN",
+    "cli_workflow_sha256": "4672540c343174348a58a163e776995aead06b63d7378febc81444ca7e87a569"
+  },
+  "authoritative_evidence_sha256": "c85df8ec972bd32fdfcb5ad7be3c50ecb6f66fc2158c307d13bb060aaead1cca"
+}

@@ -1,0 +1,12 @@
+{
+  "fixture_id": "E21-S01",
+  "schema": "e2.1-cross-face-patch-fixture-v1",
+  "request": {
+    "patch_id": "E21S01",
+    "core_parents": ["cs1/F0/L8/31111111"],
+    "target_level": 10,
+    "halo_parent_rings": 1,
+    "cell_budget": 128
+  },
+  "expect_multiple_faces": true
+}

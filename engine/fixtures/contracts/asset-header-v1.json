@@ -1,0 +1,25 @@
+{
+  "contract_version": 1,
+  "asset_id": "current-field",
+  "asset_class": "AUTHORITATIVE",
+  "schema_id": "prototype.field",
+  "schema_version": 1,
+  "producer_model_id": "ts05-current",
+  "algorithm_version": "0.1",
+  "world_identity": "world-current",
+  "layer_release_id": "layer-current",
+  "direct_dependencies": [],
+  "semantic_content_hash": "current-semantic-hash",
+  "encoded_byte_hash": "current-byte-hash",
+  "spatial_coverage": {
+    "frame_id": "equiangular-cubed-sphere-v1",
+    "face": 0,
+    "level": 0,
+    "tile_keys": [0]
+  },
+  "support_scale": null,
+  "units": null,
+  "capability": "AVAILABLE",
+  "created_by_run_id": "current-run",
+  "attributes": {}
+}

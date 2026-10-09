@@ -1,0 +1,12 @@
+{
+  "fixture_id": "E21-M01",
+  "schema": "e2.1-m1-forged-claims-fixture-v1",
+  "cases": [
+    {"mutation": "admission", "expected_code": "ADMISSION_CLAIM_MISMATCH"},
+    {"mutation": "dependency_closure", "expected_code": "DEPENDENCY_CLOSURE_MISMATCH"},
+    {"mutation": "capabilities", "expected_code": "CAPABILITY_CLAIMS_MISMATCH"},
+    {"mutation": "input_bundle_id", "expected_code": "INPUT_BUNDLE_ID_MISMATCH"},
+    {"mutation": "run_plan_id", "expected_code": "RUN_PLAN_ID_MISMATCH"},
+    {"mutation": "upstream_content", "expected_code": "DEPENDENCY_HASH_MISMATCH"}
+  ]
+}

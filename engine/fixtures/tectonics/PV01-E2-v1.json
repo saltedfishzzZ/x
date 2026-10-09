@@ -1,0 +1,25 @@
+{
+  "fixture_id": "PV01-E2-v1",
+  "schema": "E2-FIXED-WORLD-v1",
+  "seed": "PV01-E2-v1",
+  "plate_count": 6,
+  "construction_mode": "FIXED_TEST",
+  "relations": {
+    "C1": {
+      "edge_cells": ["cs1/F2/L8/31111103", "cs1/F2/L8/31111112"],
+      "expected": "CONVERGENT",
+      "normal_rate_micrometres_per_year": -133423
+    },
+    "R1": {
+      "edge_cells": ["cs1/F5/L8/33333321", "cs1/F5/L8/33333323"],
+      "expected": "DIVERGENT",
+      "normal_rate_micrometres_per_year": 86233
+    },
+    "S1": {
+      "edge_cells": ["cs1/F0/L8/11111101", "cs1/F0/L8/11111110"],
+      "expected": "STABLE",
+      "normal_rate_micrometres_per_year": 0,
+      "tangent_rate_micrometres_per_year": 0
+    }
+  }
+}

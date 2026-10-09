@@ -1,0 +1,101 @@
+{
+  "checks": [
+    {
+      "duration_seconds": 0.0,
+      "name": "python-version",
+      "output_sha256": "ae19a0c1f63256d308de32b270d675d7ea3b910dd26aeda436732701aaede747",
+      "return_code": 0,
+      "status": "PASS"
+    },
+    {
+      "duration_seconds": 0.439144,
+      "name": "cargo-fmt",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "return_code": 0,
+      "status": "PASS"
+    },
+    {
+      "duration_seconds": 0.314867,
+      "name": "cargo-clippy",
+      "output_sha256": "299f16a2c523be18fef769975d2df00e0505521db047540feea3a74b94666887",
+      "return_code": 0,
+      "status": "PASS"
+    },
+    {
+      "duration_seconds": 0.628241,
+      "name": "cargo-test-release",
+      "output_sha256": "b441489a8e66790589803212a1144370cae749c38fbcd643266d6cc6a3920d9e",
+      "return_code": 0,
+      "status": "PASS"
+    },
+    {
+      "duration_seconds": 0.082294,
+      "name": "python-oracle",
+      "output_sha256": "043345be363ba2ac5d38dd568c76c6699eabc660ba863d0047345003c45e56ee",
+      "return_code": 0,
+      "status": "PASS"
+    },
+    {
+      "duration_seconds": 1.026953,
+      "name": "cli-inspect",
+      "output_sha256": "0a65f86d9eab75d8ad72d5e8bda861cc4147a611211452064821a97885160f2b",
+      "return_code": 0,
+      "status": "PASS"
+    },
+    {
+      "duration_seconds": 0.42616,
+      "name": "cli-diagnostics",
+      "output_sha256": "4882c980ed07dfca7741e21360a5329e33f8c6e2e438c8e7f0b7f8b84e6a3d2e",
+      "return_code": 0,
+      "status": "PASS"
+    },
+    {
+      "duration_seconds": 0.383089,
+      "name": "cli-conformance",
+      "output_sha256": "26ad3136a71fd4b2ac655d74f12d1e3ad77206ec804c0d0bd8460bf17fc5f05b",
+      "return_code": 0,
+      "status": "PASS"
+    },
+    {
+      "duration_seconds": 0.0,
+      "name": "json-fixtures",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "return_code": 0,
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "json_files_validated": 17,
+    "python_oracle_tests_passed": 3,
+    "rust_tests_passed": 33
+  },
+  "evidence": {
+    "conformance": {
+      "canonical_json": "{\"contract\":\"E0-CANONICAL-JSON-v1\",\"extreme\":1e+300,\"nested\":{\"a\":0,\"z\":[3,2,1]},\"unicode\":[\"é\",\"é\"]}",
+      "canonical_json_sha256": "d1de8a666077096307fe08b89fa4df3fa86c5a64bbd0738baae1a6096c328f78",
+      "canonical_json_version": "E0-CANONICAL-JSON-v1"
+    },
+    "diagnostics": {
+      "cube_rotations": 24,
+      "l8_relative_area_error": 0.0
+    },
+    "inspect": {
+      "profile": "T0_E0",
+      "terrain_generation": "NOT_AVAILABLE"
+    }
+  },
+  "generated_at_utc": "2026-10-08T02:52:21.422721+00:00",
+  "platform": {
+    "machine": "arm64",
+    "python_implementation": "CPython",
+    "release": "24.5.0",
+    "system": "Darwin"
+  },
+  "report_schema": "T0-E0-PLATFORM-REPORT-v1",
+  "status": "PLATFORM_PASS",
+  "toolchain": {
+    "cargo": "cargo 1.90.0 (840b83a10 2025-07-30)",
+    "python": "3.13.14",
+    "rustc": "rustc 1.90.0 (1159e78c4 2025-09-14)"
+  }
+}

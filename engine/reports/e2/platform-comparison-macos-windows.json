@@ -1,0 +1,8 @@
+{
+  "report_schema": "E2-CROSS-PLATFORM-COMPARISON-v1",
+  "status": "CROSS_PLATFORM_PASS",
+  "left": "engine/reports/e2/platform-darwin-arm64.json",
+  "right": "engine/reports/e2/platform-windows-amd64.json",
+  "authoritative_evidence_sha256": "063e75b247b3ecb3831af09a5920522361bd804dba71568ce51e0a151ce19847",
+  "errors": []
+}

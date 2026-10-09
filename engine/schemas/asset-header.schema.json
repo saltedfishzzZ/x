@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:terrain-engine:schema:asset-header:1",
+  "title": "AssetHeader v1",
+  "type": "object",
+  "required": [
+    "asset_id",
+    "contract_version",
+    "asset_class",
+    "schema_id",
+    "schema_version",
+    "producer_model_id",
+    "algorithm_version",
+    "world_identity",
+    "layer_release_id",
+    "direct_dependencies",
+    "semantic_content_hash",
+    "encoded_byte_hash",
+    "spatial_coverage",
+    "capability",
+    "created_by_run_id",
+    "attributes"
+  ],
+  "properties": {
+    "contract_version": { "const": 1 },
+    "asset_id": { "type": "string", "minLength": 1 },
+    "asset_class": {
+      "enum": ["AUTHORITATIVE", "INDEX", "EVIDENCE", "PRESENTATION"]
+    },
+    "schema_id": { "type": "string", "minLength": 1 },
+    "schema_version": { "type": "integer", "minimum": 1 },
+    "producer_model_id": { "type": "string", "minLength": 1 },
+    "algorithm_version": { "type": "string", "minLength": 1 },
+    "world_identity": { "type": "string", "minLength": 1 },
+    "layer_release_id": { "type": "string", "minLength": 1 },
+    "direct_dependencies": { "type": "array" },
+    "semantic_content_hash": { "type": "string" },
+    "encoded_byte_hash": { "type": "string" },
+    "spatial_coverage": { "type": "object" },
+    "support_scale": { "type": ["object", "null"] },
+    "units": { "type": ["object", "null"] },
+    "capability": {
+      "enum": ["AVAILABLE", "PARTIAL", "NOT_AVAILABLE", "UNRESOLVED", "FAILED"]
+    },
+    "created_by_run_id": { "type": "string", "minLength": 1 },
+    "attributes": { "type": "object" }
+  },
+  "additionalProperties": false
+}

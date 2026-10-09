@@ -1,0 +1,9 @@
+{
+  "fixture_id": "PF01",
+  "version": 1,
+  "kind": "CONSTANT_SPHERE",
+  "height_metres": 0.0,
+  "levels": [0, 8],
+  "expected": { "spurious_critical_objects": 0, "relative_area_error_max": 1e-10 }
+}
+

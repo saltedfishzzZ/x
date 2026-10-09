@@ -1,0 +1,8 @@
+{
+  "fixture_id": "E2F04",
+  "schema": "E2-FIXTURE-v1",
+  "ordinary_vertex_degree": 2,
+  "triple_junction_degree": 3,
+  "rejected_degrees": [1, 4],
+  "component_identity_uses": ["world_id", "plate_a", "plate_b", "minimum_edge_id"]
+}

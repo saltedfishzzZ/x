@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "planet-engine/tectonics-release-v2",
+  "title": "TectonicManifestV2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "tectonic_release_id",
+    "world_id",
+    "generation_identity",
+    "tectonic_skeleton_id",
+    "spatial_release",
+    "model_version",
+    "authoritative_payloads",
+    "capabilities"
+  ],
+  "properties": {
+    "schema": { "const": "tectonics-release-v2" },
+    "tectonic_release_id": { "$ref": "#/$defs/safeId" },
+    "world_id": { "$ref": "#/$defs/safeId" },
+    "generation_identity": { "$ref": "#/$defs/safeId" },
+    "tectonic_skeleton_id": { "$ref": "#/$defs/safeId" },
+    "spatial_release": { "$ref": "#/$defs/releaseRef" },
+    "model_version": { "$ref": "#/$defs/safeId" },
+    "authoritative_payloads": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "$ref": "#/$defs/sha256" }
+    },
+    "capabilities": { "type": "object" }
+  },
+  "$defs": {
+    "safeId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+    },
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "releaseRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["release_id", "manifest_sha256"],
+      "properties": {
+        "release_id": { "$ref": "#/$defs/safeId" },
+        "manifest_sha256": { "$ref": "#/$defs/sha256" }
+      }
+    }
+  }
+}

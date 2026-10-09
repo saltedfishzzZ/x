@@ -1,0 +1,8 @@
+{
+  "fixture_id": "E2F05",
+  "schema": "E2-FIXTURE-v1",
+  "radius_metres": 6371000,
+  "rate_microdegrees_per_million_years": 1000000,
+  "expected_speed_micrometres_per_year": 111194.92664455874,
+  "formula": "R * omega_cross_r"
+}

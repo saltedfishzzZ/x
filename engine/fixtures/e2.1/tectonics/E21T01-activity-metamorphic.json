@@ -1,0 +1,13 @@
+{
+  "fixture_id": "E21-T01",
+  "schema": "e2.1-activity-metamorphic-fixture-v1",
+  "seed": "E21-ACTIVITY-01",
+  "worker_counts": [1, 2, 4],
+  "shard_orders": ["FORWARD", "REVERSE"],
+  "expected_shard_count": 32,
+  "activity_scales": {
+    "LOWER": [1, 2],
+    "STANDARD": [1, 1],
+    "HIGHER": [3, 2]
+  }
+}

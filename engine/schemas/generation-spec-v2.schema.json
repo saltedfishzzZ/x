@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "planet-engine/generation-spec-v2",
+  "title": "GenerationSpecV2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "world_id",
+    "world_intent_sha256",
+    "spatial_release",
+    "model_manifest",
+    "random_protocol_version",
+    "numeric_protocol_version",
+    "fixed_test_override"
+  ],
+  "properties": {
+    "schema": { "const": "generation-spec-v2" },
+    "world_id": { "$ref": "#/$defs/safeId" },
+    "world_intent_sha256": { "$ref": "#/$defs/sha256" },
+    "spatial_release": { "$ref": "#/$defs/releaseRef" },
+    "model_manifest": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "$ref": "#/$defs/safeId" }
+    },
+    "random_protocol_version": { "$ref": "#/$defs/safeId" },
+    "numeric_protocol_version": { "$ref": "#/$defs/safeId" },
+    "fixed_test_override": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["fixture_id", "fixture_sha256"],
+          "properties": {
+            "fixture_id": { "$ref": "#/$defs/safeId" },
+            "fixture_sha256": { "$ref": "#/$defs/sha256" }
+          }
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "safeId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+    },
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "releaseRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["release_id", "manifest_sha256"],
+      "properties": {
+        "release_id": { "$ref": "#/$defs/safeId" },
+        "manifest_sha256": { "$ref": "#/$defs/sha256" }
+      }
+    }
+  }
+}

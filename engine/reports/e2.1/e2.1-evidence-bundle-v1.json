@@ -1,0 +1,150 @@
+{
+  "schema": "e2.1-evidence-bundle-v1",
+  "source_tree_sha256": "41361af3ed1805e1a52754539cbf28be1a0e7b9740d8d4c05ded121a71fdf4ea",
+  "platform_reports": [
+    {
+      "path": "reports/e2.1/platform-darwin-arm64.json",
+      "sha256": "348fb50758a5a6f9726aa8c6448fe6d72e5012b0ed8c3c87854f7a24ddf0380d"
+    },
+    {
+      "path": "reports/e2.1/platform-windows-amd64.json",
+      "sha256": "22ed3064487e1cb99c744be455da5da1ae781936c90c2d693f024191dda15294"
+    }
+  ],
+  "cross_platform_report": {
+    "path": "reports/e2.1/platform-comparison-macos-windows.json",
+    "sha256": "8b24b0fbd157a853e252e11f9f4c1fed47fc765cfe50f5357605f60716ce5d65"
+  },
+  "gate_evidence": {
+    "E21-G01": {
+      "status": "PASS",
+      "macos_evidence_sha256": "91d54e3a429cacbb2ca74891b724566b0b082bb109a7f4770297968284898369",
+      "windows_evidence_sha256": "91d54e3a429cacbb2ca74891b724566b0b082bb109a7f4770297968284898369",
+      "assertion": "v1基线未改变"
+    },
+    "E21-G02": {
+      "status": "PASS",
+      "macos_evidence_sha256": "e08bbc1a1da912e55805d0ec0eba0ba2e881ae4a7a465ca2c56048bb0e191709",
+      "windows_evidence_sha256": "33c382d7518dff2db70cb89e0c77e4a8f40460d64f810edb172d20261692d82f",
+      "assertion": "v2模式、规范编码与CLI发布重开"
+    },
+    "E21-G03": {
+      "status": "PASS",
+      "macos_evidence_sha256": "6e92461eddafe6985ef86f3509b3b66ccb714e327a65f3e790a22ad0a9fe2b91",
+      "windows_evidence_sha256": "6e92461eddafe6985ef86f3509b3b66ccb714e327a65f3e790a22ad0a9fe2b91",
+      "assertion": "世界与生成身份分层"
+    },
+    "E21-G04": {
+      "status": "PASS",
+      "macos_evidence_sha256": "42a748df674b03300c78ca65c3da072cd81df97a36d7a8319a618e604ed46485",
+      "windows_evidence_sha256": "42a748df674b03300c78ca65c3da072cd81df97a36d7a8319a618e604ed46485",
+      "assertion": "固定测试身份隔离"
+    },
+    "E21-G05": {
+      "status": "PASS",
+      "macos_evidence_sha256": "f16811cded23ba3e15c6682da52461b426c462cdd3775171b7b6ce53b9be24b0",
+      "windows_evidence_sha256": "3ddd5a2b87cbd74469bb1bc61d19b33b56d5c45407b70b18c76cc1986c0586be",
+      "assertion": "板块骨架稳定"
+    },
+    "E21-G06": {
+      "status": "PASS",
+      "macos_evidence_sha256": "999351af26b1012f405b779797a77a4e6e633680822045d518c52776df6e9359",
+      "windows_evidence_sha256": "b70f34c3421acaec47dee7e86d18e05a393643b924ce44f4d7fab033051d2b0c",
+      "assertion": "活动倍率单因素关系"
+    },
+    "E21-G07": {
+      "status": "PASS",
+      "macos_evidence_sha256": "8e5f0952d85e51936d70461e68094f4c2c365676ab6c507f409a4e658ff7ebf1",
+      "windows_evidence_sha256": "0c0760068267f13ebc4bf0fe1d0f0dbc581dbe5c817bc6d9f114e69886d13861",
+      "assertion": "边界类型与强度分离"
+    },
+    "E21-G08": {
+      "status": "PASS",
+      "macos_evidence_sha256": "54ac6d905457b1ae74fcd43c2dc80e8d2132db62eb68519fd22e1c05db41ac45",
+      "windows_evidence_sha256": "54ac6d905457b1ae74fcd43c2dc80e8d2132db62eb68519fd22e1c05db41ac45",
+      "assertion": "M1结构与自身自洽"
+    },
+    "E21-G09": {
+      "status": "PASS",
+      "macos_evidence_sha256": "74f25285bf3a48485b3edf09ebb9da4d5a4952515860427e6a3dd20e585fd622",
+      "windows_evidence_sha256": "e2da972b52d2026c654dbab3526358f27c7768eecdafac923575dea5a6e28432",
+      "assertion": "M1完整准入重建"
+    },
+    "E21-G10": {
+      "status": "PASS",
+      "macos_evidence_sha256": "6da2ceb37d1c2d0ede8cbc9fbe5e10f797738d4ba787261cd282600534bed4a5",
+      "windows_evidence_sha256": "6da2ceb37d1c2d0ede8cbc9fbe5e10f797738d4ba787261cd282600534bed4a5",
+      "assertion": "E1解析与边几何"
+    },
+    "E21-G11": {
+      "status": "PASS",
+      "macos_evidence_sha256": "36841509631d6a3d968d27de9720ac9d87b7a626e27b1ee7220310b05942ab8b",
+      "windows_evidence_sha256": "36841509631d6a3d968d27de9720ac9d87b7a626e27b1ee7220310b05942ab8b",
+      "assertion": "补丁谱系、晕区与2:1平衡"
+    },
+    "E21-G12": {
+      "status": "PASS",
+      "macos_evidence_sha256": "758dd091f88206a53fa9156867875b93bfdc82b007405d3d78d8e35051d38741",
+      "windows_evidence_sha256": "5a342a4128621fdc93b6082201c8497c02d0a8734d30d487cd801ba86592fae5",
+      "assertion": "D0/D1数值确定性"
+    },
+    "E21-G13": {
+      "status": "PASS",
+      "macos_evidence_sha256": "9d7499d8329259026273db84825c1ae5df54c9c2cc57413ddfdc76f5f31d62c8",
+      "windows_evidence_sha256": "1bcfc1a82ac69d1c4acd85bd8f24cbe8d03048f89dd1289e8b4e20e3dc82cfad",
+      "assertion": "真实1/2/4线程确定性"
+    },
+    "E21-G14": {
+      "status": "PASS",
+      "macos_evidence_sha256": "e8fd9e94eef3dc09f1bdce6b1d791264ff113b28e0033438b90d7dd67946c2a0",
+      "windows_evidence_sha256": "3490d415c48f95e4f2f43a32df27fc78adeb575af008223e2d0547a6f1ce8d66",
+      "assertion": "路径、事务和冲突处理"
+    },
+    "E21-G15": {
+      "status": "PASS",
+      "macos_evidence_sha256": "01ff5083dd131bc03e76d7619ce80b7db4ad94cf5e134fadf3a8b45233f86f7e",
+      "windows_evidence_sha256": "01ff5083dd131bc03e76d7619ce80b7db4ad94cf5e134fadf3a8b45233f86f7e",
+      "assertion": "PCAL实际执行"
+    },
+    "E21-G16": {
+      "status": "PASS",
+      "macos_evidence_sha256": "51ed90844faf9b480729dbca708f5c6eef13332c1c40458ed3e1d20a3b33f6e3",
+      "windows_evidence_sha256": "51ed90844faf9b480729dbca708f5c6eef13332c1c40458ed3e1d20a3b33f6e3",
+      "assertion": "PVAL独立执行"
+    },
+    "E21-G17": {
+      "status": "PASS",
+      "macos_evidence_sha256": "3d90d6eb4ca50eb8fbb1242672d8fb679fc5a2038891bb6aaf07fb3ddd7701d4",
+      "windows_evidence_sha256": "5d4a93be6967ec60494a11085ef053dd4bc5d6c1d2bf5fd6c4ca4c7cf83e3e09",
+      "assertion": "固定件直接加载与覆盖"
+    },
+    "E21-G18": {
+      "status": "PASS",
+      "assertion": "平台同源和同检查集合",
+      "comparison_sha256": "f50dad1c05c2e834abefabc73971939acd925bf4e6d4302f0fb829428dd9a722",
+      "source_tree_sha256": "41361af3ed1805e1a52754539cbf28be1a0e7b9740d8d4c05ded121a71fdf4ea",
+      "check_set_sha256": "aa6b27da58019415ff10c6cdd9bfb88ad6b185ed93765fc87d21c7923c62d328"
+    },
+    "E21-G19": {
+      "status": "PASS",
+      "assertion": "跨平台权威证据一致",
+      "comparison_sha256": "f50dad1c05c2e834abefabc73971939acd925bf4e6d4302f0fb829428dd9a722",
+      "authoritative_evidence_sha256": "c85df8ec972bd32fdfcb5ad7be3c50ecb6f66fc2158c307d13bb060aaead1cca"
+    },
+    "E21-G20": {
+      "status": "PASS",
+      "assertion": "冻结证据包完整",
+      "evidence_sha256": "7c1d71b6ec5c827854d8b48f48b18e5849a1b6347539df33005f55c16b3f874c",
+      "inputs": {
+        "macos_report_sha256": "348fb50758a5a6f9726aa8c6448fe6d72e5012b0ed8c3c87854f7a24ddf0380d",
+        "windows_report_sha256": "22ed3064487e1cb99c744be455da5da1ae781936c90c2d693f024191dda15294",
+        "cross_platform_report_sha256": "8b24b0fbd157a853e252e11f9f4c1fed47fc765cfe50f5357605f60716ce5d65",
+        "source_tree_sha256": "41361af3ed1805e1a52754539cbf28be1a0e7b9740d8d4c05ded121a71fdf4ea",
+        "cargo_lock_sha256": "d1821ad44cb965d512de2f6b2f117acf17b93a76fd35381ed1e7a6e82027bcb4",
+        "fixture_manifest_sha256": "6d3d3f8ff6f3bc978bf6478076181210624ebec898b5656591fff388903f5c11",
+        "schema_manifest_sha256": "7068a6edbaef041fc4e163ddb6013c4a6409efa850747b99289b22021992f82d"
+      }
+    }
+  },
+  "bundle_sha256": "fefc7e7c2192c4d80a26984b9136ad6efa6c9553e18c7d9b2ebd2fce438d8f83"
+}

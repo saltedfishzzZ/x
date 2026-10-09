@@ -1,0 +1,9 @@
+{
+  "fixture_id": "PF04",
+  "version": 1,
+  "kind": "DISCRETE_SADDLE",
+  "heights": [0.0, 0.0, 1.0, 2.0, 2.0],
+  "edges": [[0, 2], [1, 2], [2, 3], [2, 4]],
+  "expected": { "saddles": 1, "lower_branches": 2, "upper_branches": 2 }
+}
+

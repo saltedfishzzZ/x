@@ -1,0 +1,63 @@
+{
+  "schema": "e2.1-fixture-manifest-v1",
+  "fixture_set": "E2.1-v2",
+  "status": "FROZEN",
+  "fixtures": [
+    {
+      "id": "E21-B01",
+      "path": "baselines/e2-v1-freeze.json",
+      "purpose": "protect the frozen E2-v1 source and evidence baseline"
+    },
+    {
+      "id": "E21-I01",
+      "path": "identity/E21I01-world-kinds.json",
+      "purpose": "prove natural and fixed-test world identities remain distinct",
+      "test_binding": "world_spec::v2::tests::identity_fixture_is_executable"
+    },
+    {
+      "id": "E21-S01",
+      "path": "spatial/E21S01-cross-face-patch.json",
+      "purpose": "exercise a patch that crosses a cube-face seam",
+      "test_binding": "sphere_core::v2::tests::cross_face_patch_fixture_is_executable"
+    },
+    {
+      "id": "E21-T01",
+      "path": "tectonics/E21T01-activity-metamorphic.json",
+      "purpose": "exercise activity scaling and fixed-shard worker metamorphism",
+      "test_binding": "tectonics_core::v2::tests::activity_fixture_is_executable"
+    },
+    {
+      "id": "E21-M01",
+      "path": "m1/E21M01-forged-claims.json",
+      "purpose": "exercise every declared forged M1 claim and expected finding",
+      "test_binding": "terrain_input::v2::tests::forged_claim_fixture_is_executable"
+    },
+    {
+      "id": "E21-R01",
+      "path": "storage/E21R01-safe-store-ids.json",
+      "purpose": "exercise portable accepted and rejected release-store identifiers",
+      "test_binding": "release_store::tests::safe_store_id_fixture_is_executable"
+    },
+    {
+      "id": "PCAL-E2.1-v2",
+      "path": "statistical/PCAL-E2.1-v2.json",
+      "purpose": "calibration-only seed set executed by the E2.1 seed-suite runner",
+      "test_binding": "tectonics-core/examples/e21_seed_suite.rs"
+    },
+    {
+      "id": "PVAL-E2.1-v2",
+      "path": "statistical/PVAL-E2.1-v2.json",
+      "purpose": "validation-only seed set executed by the E2.1 seed-suite runner",
+      "test_binding": "tectonics-core/examples/e21_seed_suite.rs"
+    }
+  ],
+  "schemas": [
+    "../../schemas/world-intent-spec-v2.schema.json",
+    "../../schemas/generation-spec-v2.schema.json",
+    "../../schemas/spatial-release-v2.schema.json",
+    "../../schemas/tectonics-release-v2.schema.json",
+    "../../schemas/m1-input-release-v2.schema.json",
+    "../../schemas/e2.1-platform-report-v1.schema.json",
+    "../../schemas/e2.1-evidence-bundle-v1.schema.json"
+  ]
+}

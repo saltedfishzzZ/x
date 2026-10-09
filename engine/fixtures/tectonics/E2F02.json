@@ -1,0 +1,11 @@
+{
+  "fixture_id": "E2F02",
+  "schema": "E2-FIXTURE-v1",
+  "seed": "PV01-E2-v1",
+  "namespace": "tectonics",
+  "entity_id": "world",
+  "property": "plate-count-quantile",
+  "sample_index": 0,
+  "sample_u64": 14770547165756481792,
+  "top_53_bits": 7212181233279532
+}

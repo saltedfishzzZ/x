@@ -1,0 +1,19 @@
+[package]
+name = "tectonics-release"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+release-store = { path = "../release-store" }
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+sphere-core = { path = "../sphere-core" }
+sphere-release = { path = "../sphere-release" }
+tectonics-core = { path = "../tectonics-core" }
+thiserror.workspace = true
+world-contracts = { path = "../world-contracts" }
+world-spec = { path = "../world-spec" }
+
+[lints]
+workspace = true

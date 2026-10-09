@@ -1,0 +1,10 @@
+{
+  "fixture_id": "E2F08",
+  "schema": "E2-FIXTURE-v1",
+  "required_rejections": [
+    "NONCANONICAL_MANIFEST",
+    "MANIFEST_HASH_MISMATCH",
+    "OWNER_HASH_MISMATCH",
+    "IMMUTABLE_RELEASE_EXISTS"
+  ]
+}

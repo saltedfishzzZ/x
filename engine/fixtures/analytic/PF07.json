@@ -1,0 +1,8 @@
+{
+  "fixture_id": "PF07",
+  "version": 1,
+  "kind": "CUBE_ROTATIONS_AND_FACE_ROUND_TRIP",
+  "rotation_count": 24,
+  "expected": { "duplicate_edges": 0, "round_trip_same_canonical_cell": true }
+}
+

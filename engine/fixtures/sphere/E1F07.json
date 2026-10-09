@@ -1,0 +1,7 @@
+{
+  "id": "E1F07",
+  "purpose": "24 个立方体旋转保持面积和邻接关系",
+  "source_cell": "cs1/F0/L5/12231",
+  "expected_rotation_count": 24,
+  "relative_area_tolerance": 2e-14
+}

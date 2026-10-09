@@ -1,0 +1,9 @@
+{
+  "fixture_id": "E2F01",
+  "schema": "E2-FIXTURE-v1",
+  "seed_input": "é  world",
+  "normalized_seed": "é world",
+  "world_id": "world-5b78f49088a044d83ec64ed5",
+  "seed_key": "89ad75f74c5f3875b9789bb6e4f203c8c695d66e9229ee3be2bf5c02c815e267",
+  "generation_identity": "generation-cf76554ef9732e74bc9c368a"
+}

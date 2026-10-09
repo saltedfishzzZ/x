@@ -1,0 +1,15 @@
+{
+  "schema": "e2.1-legacy-baseline-v1",
+  "captured_on": "2026-10-08",
+  "legacy_stage": "E2-v1",
+  "legacy_status": "FROZEN_LEGACY_PROTOTYPE",
+  "source_tree_sha256": "94fd53c3f05c2e26827e357a5e08f4c9e5a8d0908425c643572987cd9c5069d1",
+  "authoritative_evidence_sha256": "063e75b247b3ecb3831af09a5920522361bd804dba71568ce51e0a151ce19847",
+  "protected_files": {
+    "fixtures/manifest.json": "4205cd0f5c511cd39d62ea9f5bd2d79fa7ffcfc14cf89970ac2981e18fa0a785",
+    "reports/e2/E2冻结验收报告.md": "66390296ce030234bfa97b40162e790a6dacdb21d18a86c810c31618e32409f4",
+    "reports/e2/platform-comparison-macos-windows.json": "8d4d224c0fd2082a63679ce901e942fab00bf1462540e76a474361c154ca9293",
+    "reports/e2/platform-darwin-arm64.json": "34b1d70be55b05ce1496ea68ddc1f7b8f81e057a9336cd8c23ab3dffc7864ce8",
+    "reports/e2/platform-windows-amd64.json": "fbf387c2c252a9d93415e19c9ef93045acd3702ba644a210e20bada46aa86021"
+  }
+}

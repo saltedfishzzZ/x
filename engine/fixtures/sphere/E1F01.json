@@ -1,0 +1,15 @@
+{
+  "id": "E1F01",
+  "purpose": "六面、立方体边和角点的规范归属",
+  "tie_break": "X>Y>Z; positive side owns zero",
+  "cases": [
+    { "vector": [1, 0, 0], "face": "+X" },
+    { "vector": [-1, 0, 0], "face": "-X" },
+    { "vector": [0, 1, 0], "face": "+Y" },
+    { "vector": [0, -1, 0], "face": "-Y" },
+    { "vector": [0, 0, 1], "face": "+Z" },
+    { "vector": [0, 0, -1], "face": "-Z" },
+    { "vector": [1, 1, 1], "face": "+X" },
+    { "vector": [0, -1, 1], "face": "-Y" }
+  ]
+}

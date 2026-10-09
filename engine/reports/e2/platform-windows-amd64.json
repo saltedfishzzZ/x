@@ -1,0 +1,226 @@
+{
+  "report_schema": "E2-PLATFORM-REPORT-v1",
+  "status": "PLATFORM_PASS",
+  "generated_at_utc": "2026-10-08T14:41:33.646595+00:00",
+  "platform": {
+    "system": "Windows",
+    "release": "10",
+    "machine": "AMD64",
+    "python_implementation": "CPython"
+  },
+  "toolchain": {
+    "rustc": "rustc 1.90.0 (1159e78c4 2025-09-14)",
+    "cargo": "cargo 1.90.0 (840b83a10 2025-07-30)",
+    "python": "3.11.9"
+  },
+  "source_tree_sha256": "94fd53c3f05c2e26827e357a5e08f4c9e5a8d0908425c643572987cd9c5069d1",
+  "counts": {
+    "rust_tests": 60,
+    "python_oracle_tests": 10,
+    "json_fixtures": 36
+  },
+  "gates": {
+    "E2-G01": "PASS",
+    "E2-G02": "PASS",
+    "E2-G03": "PASS",
+    "E2-G04": "PASS",
+    "E2-G05": "PASS",
+    "E2-G06": "PASS",
+    "E2-G07": "PASS",
+    "E2-G08": "PASS",
+    "E2-G09": "PASS",
+    "E2-G10": "PASS",
+    "E2-G11": "PASS",
+    "E2-G12": "PASS",
+    "E2-G13": "PASS",
+    "E2-G14": "PASS",
+    "E2-G15": "PASS",
+    "E2-G16": "PASS",
+    "E2-G17": "PLATFORM_EVIDENCE_READY"
+  },
+  "authoritative_evidence": {
+    "conformance": {
+      "boundary_component_count": 12,
+      "boundary_edge_count": 3078,
+      "discrete_digest": "1cc2d9bb8ee39b7f124139e3752af491f56dcc7b6c25d567f06b84a2146ec9f8",
+      "generation_attempt": 1,
+      "owner_count": 393216,
+      "plate_count": 6,
+      "qualifications": {
+        "CONVERGENT": 959,
+        "DIVERGENT": 1646,
+        "STABLE": 256,
+        "UNRESOLVED": 217
+      },
+      "world_id": "world-053ac0d3d275e96f10a6a143"
+    },
+    "m1_admission": "ADMITTED",
+    "m1_release_sha256": "ba0a0f0b3aea1f91aac24fd62be75a4854191bd5cdaf802e19622ce47cb8c8fa",
+    "owners_sha256": "a078f390a057c7c7aad0797db814aad40cfb03401d6ff630ad80d929092dd64b",
+    "pval_evidence_sha256": "a91032971a3505f6e736dd22db9c4b8af777a640f7d1692e21da45e1cc9d2cab",
+    "pv01_qualifications": {
+      "DIVERGENT": 1646,
+      "UNRESOLVED": 217,
+      "CONVERGENT": 959,
+      "STABLE": 256
+    },
+    "tectonic_manifest_sha256": "e8eb899842a507db7b600d1d009b7e265f2a1c74d9cd0ca8da11f6cb2a3c7448",
+    "world_identity": {
+      "generation_identity": "generation-38b03b9e2e45471bd58e7e36",
+      "seed_key": "ec2a01a43513f16acb9dd774655b616521be87b6d1cd8cca57d2387ba9a6b15f",
+      "world_id": "world-053ac0d3d275e96f10a6a143"
+    }
+  },
+  "authoritative_evidence_sha256": "063e75b247b3ecb3831af09a5920522361bd804dba71568ce51e0a151ce19847",
+  "performance": {
+    "detail_queries": {
+      "count": 10000,
+      "pass": true,
+      "seconds": 0.0008066
+    },
+    "estimated_resident_upper_bound_bytes": 15800576,
+    "evidence_sha256": "a91032971a3505f6e736dd22db9c4b8af777a640f7d1692e21da45e1cc9d2cab",
+    "maximum_generation_attempt": 1,
+    "owner_queries": {
+      "count": 100000,
+      "pass": true,
+      "seconds": 0.0007192
+    },
+    "pval": {
+      "count": 32,
+      "pass": true,
+      "seconds": 20.7922709
+    }
+  },
+  "release_package_bytes": 3299428,
+  "checks": [
+    {
+      "name": "python-version",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.0,
+      "output_sha256": "8f5d262b3bf12072437206a54a16f89e7ffac61876b9b22b78c71d2966887916",
+      "output": "3.11.9"
+    },
+    {
+      "name": "cargo-fmt",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 1.5,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": ""
+    },
+    {
+      "name": "cargo-clippy",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 4.359,
+      "output_sha256": "01d4a1f15aa9d4edb80c9e3f5e3142f0a3cf2470273ab0bcb924fd7887b6d2d5",
+      "output": "    Checking tinyvec v1.13.3\n    Checking sphere-core v0.1.0 (C:\\terrain-engine\\engine\\crates\\sphere-core)\n    Checking container-integration v0.1.0 (C:\\terrain-engine\\engine\\spikes\\container-integration)\n    Checking topology-fixture v0.1.0 (C:\\terrain-engine\\engine\\spikes\\topology-fixture)\n    Checking world-contracts v0.1.0 (C:\\terrain-engine\\engine\\crates\\world-contracts)\n    Checking unicode-normalization v0.1.25\n    Checking release-store v0.1.0 (C:\\terrain-engine\\engine\\crates\\release-store)\n    Checking deterministic-math v0.1.0 (C:\\terrain-engine\\engine\\spikes\\deterministic-math)\n    Checking sphere-release v0.1.0 (C:\\terrain-engine\\engine\\crates\\sphere-release)\n    Checking world-spec v0.1.0 (C:\\terrain-engine\\engine\\crates\\world-spec)\n    Checking tectonics-core v0.1.0 (C:\\terrain-engine\\engine\\crates\\tectonics-core)\n    Checking tectonics-release v0.1.0 (C:\\terrain-engine\\engine\\crates\\tectonics-release)\n    Checking terrain-input v0.1.0 (C:\\terrain-engine\\engine\\crates\\terrain-input)\n    Checking terrain-cli v0.1.0 (C:\\terrain-engine\\engine\\crates\\terrain-cli)\n    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.19s\n"
+    },
+    {
+      "name": "cargo-test-release",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 15.375,
+      "output_sha256": "a0c3da0a2aeefd88720d9d2693b1a89b1f4171d709d8fca11f959c21220d6cec",
+      "output": "\nrunning 4 tests\ntest tests::capacity_curve_is_monotone ... ok\ntest tests::dry_below_minimum_and_full_above_maximum ... ok\ntest tests::half_level_matches_analytic_subtriangle ... ok\ntest tests::injected_non_monotonicity_is_rejected ... ok\n\ntest result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 4 tests\ntest tests::named_random_is_order_independent_and_stream_isolated ... ok\ntest tests::spherical_basis_has_expected_low_order_values ... ok\ntest tests::stable_sum_ignores_input_order ... ok\ntest tests::named_values_reduce_identically_with_one_two_or_four_workers ... ok\n\ntest result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 5 tests\ntest tests::lossless_compression_does_not_change_semantic_bytes ... ok\ntest tests::interrupted_candidate_is_not_a_release ... ok\ntest tests::legacy_header_verifies_with_pre_migration_semantics ... ok\ntest tests::byte_tampering_is_detected ... ok\ntest tests::field_round_trip_and_atomic_commit ... ok\n\ntest result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 15 tests\ntest e1_f08_rejects_invalid_levels_radii_caps_and_patch_budgets ... ok\ntest e1_g03_unit_vector_contract_and_invalid_inputs ... ok\ntest e1_g04_non_boundary_face_mapping_round_trip ... ok\ntest e1_g04_ties_use_x_then_y_then_z ... ok\ntest e1_g02_cube_corner_has_three_incident_cells ... ok\ntest e1_g07_tangent_frame_is_orthonormal_and_right_handed ... ok\ntest e1_g08_cube_rotations_preserve_cell_area ... ok\ntest e1_g10_patch_has_three_scales_and_area_weights ... ok\ntest e1_g01_child_order_is_southwest_southeast_northwest_northeast ... ok\ntest e1_g06_children_preserve_parent_area ... ok\ntest e1_g11_patch_signature_is_input_order_independent ... ok\ntest e1_g09_cap_cover_is_sorted_unique_and_contains_sampled_points ... ok\ntest e1_g01_identity_round_trip_parent_child_and_no_sample_collision ... ok\ntest e1_g02_all_l4_neighbours_are_reciprocal_with_shared_edges ... ok\ntest e1_g05_l8_global_area_closes ... ok\n\ntest result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.23s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 5 tests\ntest e1_f08_rejects_path_like_release_identity ... ok\ntest e1_g13_injected_cross_face_corruption_is_rejected ... ok\ntest e1_g14_manifest_byte_tampering_is_rejected ... ok\ntest e1_g14_noncanonical_manifest_is_rejected_even_with_matching_hash ... ok\ntest e1_g14_publish_open_and_immutable_identity ... ok\n\ntest result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.30s\n\n\nrunning 4 tests\ntest tests::classification_respects_the_integer_deadband ... ok\ntest tests::small_partition_is_complete_connected_and_queryable ... ok\ntest tests::pv01_uses_fixed_six_plate_input ... ok\ntest tests::pv01_input_order_and_six_rotations_preserve_physical_relations ... ok\n\ntest result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.33s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 2 tests\ntest tests::injected_owner_and_boundary_corruption_are_rejected ... ok\ntest tests::pv01_publish_open_and_owner_tampering_rejection ... ok\n\ntest result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.21s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 3 tests\ntest tests::path_like_namespace_is_rejected ... ok\ntest tests::run_plan_is_separate_from_generation_identity ... ok\ntest tests::e2_admission_matrix_and_oracle_isolation_hold ... ok\n\ntest result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.38s\n\n\nrunning 3 tests\ntest tests::equal_minima_stay_distinct_without_an_edge ... ok\ntest tests::flat_plateau_remains_one_region ... ok\ntest tests::saddle_merges_two_lower_components ... ok\n\ntest result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 10 tests\ntest tests::canonical_json_extreme_exponents_are_stable ... ok\ntest tests::canonical_json_preserves_unicode_scalar_sequence ... ok\ntest tests::current_asset_header_reads_without_migration ... ok\ntest tests::canonical_json_recursively_ignores_hash_map_insertion_order ... ok\ntest tests::canonical_json_rejects_non_finite_numbers ... ok\ntest tests::canonical_map_order_is_stable ... ok\ntest tests::future_asset_header_version_is_rejected ... ok\ntest tests::legacy_asset_header_migrates_without_changing_semantic_identity ... ok\ntest tests::canonical_json_normalizes_negative_zero ... ok\ntest tests::dependencies_must_be_sorted ... ok\n\ntest result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 5 tests\ntest tests::seed_normalization_is_nfc_and_whitespace_stable ... ok\ntest tests::e2f01_and_e2f02_fixed_vectors_match ... ok\ntest tests::named_random_is_order_independent_and_isolated ... ok\ntest tests::identities_are_stable_and_case_sensitive ... ok\ntest tests::preferences_are_monotonic_for_one_seed ... ok\n\ntest result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n   Compiling tinyvec v1.13.3\n   Compiling sphere-core v0.1.0 (C:\\terrain-engine\\engine\\crates\\sphere-core)\n   Compiling unicode-normalization v0.1.25\n   Compiling world-spec v0.1.0 (C:\\terrain-engine\\engine\\crates\\world-spec)\n   Compiling tectonics-core v0.1.0 (C:\\terrain-engine\\engine\\crates\\tectonics-core)\n   Compiling tectonics-release v0.1.0 (C:\\terrain-engine\\engine\\crates\\tectonics-release)\n   Compiling terrain-input v0.1.0 (C:\\terrain-engine\\engine\\crates\\terrain-input)\n   Compiling terrain-cli v0.1.0 (C:\\terrain-engine\\engine\\crates\\terrain-cli)\n    Finished `release` profile [optimized] target(s) in 8.42s\n     Running unittests src\\lib.rs (target\\release\\deps\\container_integration-b4d6c2190ad3938a.exe)\n     Running unittests src\\lib.rs (target\\release\\deps\\deterministic_math-4038e33e4fcc7975.exe)\n     Running unittests src\\lib.rs (target\\release\\deps\\release_store-9113199b30468b51.exe)\n     Running unittests src\\lib.rs (target\\release\\deps\\sphere_core-ba70636f2bed0849.exe)\n     Running tests\\e1_acceptance.rs (target\\release\\deps\\e1_acceptance-8437a04af05268a2.exe)\n     Running unittests examples\\e1_benchmark.rs (target\\release\\examples\\e1_benchmark-b6dba2e2254b5f4a.exe)\n     Running unittests src\\lib.rs (target\\release\\deps\\sphere_release-edcb17292ff2cac2.exe)\n     Running tests\\release_acceptance.rs (target\\release\\deps\\release_acceptance-71bf41bcab7e0278.exe)\n     Running unittests src\\lib.rs (target\\release\\deps\\tectonics_core-2ea7ab95e8896e0c.exe)\n     Running unittests examples\\e2_benchmark.rs (target\\release\\examples\\e2_benchmark-47f232c170fb7ebe.exe)\n     Running unittests src\\lib.rs (target\\release\\deps\\tectonics_release-543c06c88c815093.exe)\n     Running unittests src\\main.rs (target\\release\\deps\\terrain_cli-f8a42961ceb08d7d.exe)\n     Running unittests src\\lib.rs (target\\release\\deps\\terrain_input-79455461aa4f0a95.exe)\n     Running unittests src\\lib.rs (target\\release\\deps\\topology_fixture-31c805338ba69f32.exe)\n     Running unittests src\\lib.rs (target\\release\\deps\\world_contracts-7346497d42704389.exe)\n     Running unittests src\\lib.rs (target\\release\\deps\\world_spec-b0d2c674e3bae6da.exe)\n"
+    },
+    {
+      "name": "python-oracle",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.172,
+      "output_sha256": "9634723d2264d603036624cc978e9972362f70f31ad3c34169807bea09f126e2",
+      "output": "test_child_areas_close_to_parent (test_oracle.OracleTests.test_child_areas_close_to_parent) ... ok\ntest_cubed_sphere_area_closes_independently (test_oracle.OracleTests.test_cubed_sphere_area_closes_independently) ... ok\ntest_e2_euler_velocity_analytic_vector (test_oracle.OracleTests.test_e2_euler_velocity_analytic_vector) ... ok\ntest_e2_integer_boundary_classification (test_oracle.OracleTests.test_e2_integer_boundary_classification) ... ok\ntest_e2_named_random_fixed_vector (test_oracle.OracleTests.test_e2_named_random_fixed_vector) ... ok\ntest_e2_seed_normalization (test_oracle.OracleTests.test_e2_seed_normalization) ... ok\ntest_equiangular_vectors_are_unit_length (test_oracle.OracleTests.test_equiangular_vectors_are_unit_length) ... ok\ntest_full_ramp (test_oracle.OracleTests.test_full_ramp) ... ok\ntest_half_ramp (test_oracle.OracleTests.test_half_ramp) ... ok\ntest_unit_sphere_area (test_oracle.OracleTests.test_unit_sphere_area) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.072s\n\nOK\n"
+    },
+    {
+      "name": "world-spec-vector",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 4.25,
+      "output_sha256": "dac3002bc9712dd079942b4f7fe126e87e3a2213e1491eb0ca173a8adb5b0007",
+      "output": "{\"identity\":{\"generation_identity\":\"generation-38b03b9e2e45471bd58e7e36\",\"seed_key\":\"ec2a01a43513f16acb9dd774655b616521be87b6d1cd8cca57d2387ba9a6b15f\",\"world_id\":\"world-053ac0d3d275e96f10a6a143\"},\"plate_count\":10,\"spec_sha256\":\"053ac0d3d275e96f10a6a14359735fac2bc85305bf7a1bd60596ddcb3b3b96c9\"}\n"
+    },
+    {
+      "name": "e2-benchmark",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 24.563,
+      "output_sha256": "df9dc6cbe206789b8615deff020febb8c75ee54c3256a5c0210753a68be72325",
+      "output": "{\"detail_queries\":{\"count\":10000,\"pass\":true,\"seconds\":0.0008066},\"estimated_resident_upper_bound_bytes\":15800576,\"evidence_sha256\":\"a91032971a3505f6e736dd22db9c4b8af777a640f7d1692e21da45e1cc9d2cab\",\"maximum_generation_attempt\":1,\"owner_queries\":{\"count\":100000,\"pass\":true,\"seconds\":0.0007192},\"pval\":{\"count\":32,\"pass\":true,\"seconds\":20.7922709}}\n"
+    },
+    {
+      "name": "tectonic-conformance-1-thread",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.515,
+      "output_sha256": "9c590bbec344ffe94af9201160d9fb2d4dacce68d6a0963a9e1347c66e180661",
+      "output": "{\"boundary_component_count\":12,\"boundary_edge_count\":3078,\"discrete_digest\":\"1cc2d9bb8ee39b7f124139e3752af491f56dcc7b6c25d567f06b84a2146ec9f8\",\"generation_attempt\":1,\"owner_count\":393216,\"plate_count\":6,\"qualifications\":{\"CONVERGENT\":959,\"DIVERGENT\":1646,\"STABLE\":256,\"UNRESOLVED\":217},\"world_id\":\"world-053ac0d3d275e96f10a6a143\"}\n"
+    },
+    {
+      "name": "tectonic-conformance-2-thread",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.547,
+      "output_sha256": "9c590bbec344ffe94af9201160d9fb2d4dacce68d6a0963a9e1347c66e180661",
+      "output": "{\"boundary_component_count\":12,\"boundary_edge_count\":3078,\"discrete_digest\":\"1cc2d9bb8ee39b7f124139e3752af491f56dcc7b6c25d567f06b84a2146ec9f8\",\"generation_attempt\":1,\"owner_count\":393216,\"plate_count\":6,\"qualifications\":{\"CONVERGENT\":959,\"DIVERGENT\":1646,\"STABLE\":256,\"UNRESOLVED\":217},\"world_id\":\"world-053ac0d3d275e96f10a6a143\"}\n"
+    },
+    {
+      "name": "tectonic-conformance-4-thread",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.656,
+      "output_sha256": "9c590bbec344ffe94af9201160d9fb2d4dacce68d6a0963a9e1347c66e180661",
+      "output": "{\"boundary_component_count\":12,\"boundary_edge_count\":3078,\"discrete_digest\":\"1cc2d9bb8ee39b7f124139e3752af491f56dcc7b6c25d567f06b84a2146ec9f8\",\"generation_attempt\":1,\"owner_count\":393216,\"plate_count\":6,\"qualifications\":{\"CONVERGENT\":959,\"DIVERGENT\":1646,\"STABLE\":256,\"UNRESOLVED\":217},\"world_id\":\"world-053ac0d3d275e96f10a6a143\"}\n"
+    },
+    {
+      "name": "sphere-build",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.188,
+      "output_sha256": "84b69a202d8c23d8e42628074298f500e0dfc1860ba6455d6c21fb4ff1c024c2",
+      "output": "{\"path\":\"C:\\\\Users\\\\ADMINI~1\\\\AppData\\\\Local\\\\Temp\\\\terrain-e2-l76k_k3_\\\\store\\\\releases\\\\e1-for-e2\",\"manifest_sha256\":\"d6d41752e41b30c4f7f00fc531f63e0d0e084b7514a2ea6fbc4658e6c750e5df\"}\n"
+    },
+    {
+      "name": "tectonic-build-pv01",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 1.015,
+      "output_sha256": "df80f041a6eb7e1d54c249c16e1a874c59fdbe118e6de5c7734abc0420449f27",
+      "output": "{\"path\":\"C:\\\\Users\\\\ADMINI~1\\\\AppData\\\\Local\\\\Temp\\\\terrain-e2-l76k_k3_\\\\store\\\\releases\\\\pv01-e2-v1\",\"manifest_sha256\":\"e8eb899842a507db7b600d1d009b7e265f2a1c74d9cd0ca8da11f6cb2a3c7448\",\"owners_sha256\":\"a078f390a057c7c7aad0797db814aad40cfb03401d6ff630ad80d929092dd64b\"}\n"
+    },
+    {
+      "name": "tectonic-validate",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.454,
+      "output_sha256": "3440a521deb97cc38dcc50a0f7b739591a41aff588610c4b87dbacf6d8a379d6",
+      "output": "{\"status\":\"VALID\",\"tectonic_release_id\":\"pv01-e2-v1\"}\n"
+    },
+    {
+      "name": "m1-build-fixed-test",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.531,
+      "output_sha256": "f4c136d73f764598d287213d5b8fe0ffb2d0b6097a085af35a2a991297a95ce7",
+      "output": "{\"path\":\"C:\\\\Users\\\\ADMINI~1\\\\AppData\\\\Local\\\\Temp\\\\terrain-e2-l76k_k3_\\\\store\\\\releases\\\\m1-pv01\",\"release_sha256\":\"ba0a0f0b3aea1f91aac24fd62be75a4854191bd5cdaf802e19622ce47cb8c8fa\"}\n"
+    },
+    {
+      "name": "m1-validate",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.125,
+      "output_sha256": "d8e93c6b926dcc68c0ee984f45ec339e42af71fdefd108a979628c3c806395a6",
+      "output": "{\"m1_release_id\":\"m1-pv01\",\"status\":\"VALID\"}\n"
+    },
+    {
+      "name": "json-fixtures",
+      "status": "PASS",
+      "return_code": 0,
+      "duration_seconds": 0.0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": ""
+    }
+  ]
+}

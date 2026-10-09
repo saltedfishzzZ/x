@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "planet-engine/e2.1-evidence-bundle-v1",
+  "title": "E2.1EvidenceBundleV1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "source_tree_sha256",
+    "platform_reports",
+    "cross_platform_report",
+    "gate_evidence",
+    "bundle_sha256"
+  ],
+  "properties": {
+    "schema": { "const": "e2.1-evidence-bundle-v1" },
+    "source_tree_sha256": { "$ref": "#/$defs/sha256" },
+    "platform_reports": {
+      "type": "array",
+      "minItems": 2,
+      "items": { "$ref": "#/$defs/evidenceRef" }
+    },
+    "cross_platform_report": { "$ref": "#/$defs/evidenceRef" },
+    "gate_evidence": { "type": "object", "minProperties": 20 },
+    "bundle_sha256": { "$ref": "#/$defs/sha256" }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "evidenceRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "sha256": { "$ref": "#/$defs/sha256" }
+      }
+    }
+  }
+}

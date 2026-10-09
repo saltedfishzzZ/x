@@ -1,0 +1,12 @@
+* text=auto
+
+*.rs text eol=lf
+*.toml text eol=lf
+*.lock text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.cmd text eol=crlf
+
+# 冻结平台报告的摘要按原始字节计算，禁止换行规范化
+engine/reports/**/*.json -text

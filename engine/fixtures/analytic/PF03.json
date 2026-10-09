@@ -1,0 +1,9 @@
+{
+  "fixture_id": "PF03",
+  "version": 1,
+  "kind": "LINEAR_TRIANGLE_CAPACITY",
+  "vertices": [[0.0, 0.0, 0.0], [1.0, 0.0, 1.0], [0.0, 1.0, 1.0]],
+  "sample_potential": 0.5,
+  "expected": { "area": 0.125, "volume": 0.020833333333333332 }
+}
+

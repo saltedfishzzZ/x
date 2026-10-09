@@ -1,0 +1,10 @@
+{
+  "fixture_id": "E2F03",
+  "schema": "E2-FIXTURE-v1",
+  "level": 8,
+  "owner_count": 393216,
+  "minimum_plate_fraction": 0.02,
+  "maximum_plate_fraction": 0.35,
+  "minimum_site_separation_degrees": 20,
+  "maximum_attempts": 8
+}

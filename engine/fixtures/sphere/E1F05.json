@@ -1,0 +1,8 @@
+{
+  "id": "E1F05",
+  "purpose": "跨面球冠保守覆盖",
+  "center": [1.0, 0.95, 0.1],
+  "angular_radius_radians": 0.22,
+  "level": 5,
+  "requirements": ["no_false_negative", "unique", "canonical_order"]
+}

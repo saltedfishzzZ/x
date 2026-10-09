@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "planet-engine/world-intent-spec-v2",
+  "title": "WorldIntentSpecV2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "normalized_seed",
+    "seed_format_version",
+    "preset",
+    "radius_metres",
+    "plate_count_preference",
+    "tectonic_activity_preference",
+    "world_kind",
+    "fixed_test"
+  ],
+  "properties": {
+    "schema": { "const": "world-intent-spec-v2" },
+    "normalized_seed": { "type": "string", "minLength": 1, "maxLength": 128 },
+    "seed_format_version": { "const": "seed-format-v1" },
+    "preset": { "const": "earthlike-prototype-v1" },
+    "radius_metres": { "const": 6371000 },
+    "plate_count_preference": {
+      "enum": ["FEWER", "STANDARD", "MORE"]
+    },
+    "tectonic_activity_preference": {
+      "enum": ["LOWER", "STANDARD", "HIGHER"]
+    },
+    "world_kind": { "enum": ["NATURAL", "FIXED_TEST"] },
+    "fixed_test": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["fixture_id", "fixture_sha256"],
+          "properties": {
+            "fixture_id": { "$ref": "#/$defs/safeId" },
+            "fixture_sha256": { "$ref": "#/$defs/sha256" }
+          }
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "world_kind": { "const": "NATURAL" } },
+        "required": ["world_kind"]
+      },
+      "then": { "properties": { "fixed_test": { "type": "null" } } }
+    },
+    {
+      "if": {
+        "properties": { "world_kind": { "const": "FIXED_TEST" } },
+        "required": ["world_kind"]
+      },
+      "then": { "properties": { "fixed_test": { "type": "object" } } }
+    }
+  ],
+  "$defs": {
+    "safeId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+    },
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+  }
+}

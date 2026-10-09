@@ -1,0 +1,20 @@
+[package]
+name = "terrain-cli"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap.workspace = true
+release-store = { path = "../release-store" }
+serde.workspace = true
+serde_json.workspace = true
+sphere-core = { path = "../sphere-core" }
+sphere-release = { path = "../sphere-release" }
+tectonics-core = { path = "../tectonics-core" }
+tectonics-release = { path = "../tectonics-release" }
+terrain-input = { path = "../terrain-input" }
+world-contracts = { path = "../world-contracts" }
+world-spec = { path = "../world-spec" }
+
+[lints]
+workspace = true

@@ -1,0 +1,38 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/world-contracts",
+    "crates/deterministic-numeric",
+    "crates/sphere-core",
+    "crates/sphere-release",
+    "crates/release-store",
+    "crates/world-spec",
+    "crates/tectonics-core",
+    "crates/tectonics-release",
+    "crates/terrain-input",
+    "crates/terrain-cli",
+    "spikes/deterministic-math",
+    "spikes/topology-fixture",
+    "spikes/container-integration",
+]
+
+[workspace.package]
+edition = "2024"
+license = "MIT OR Apache-2.0"
+rust-version = "1.90"
+
+[workspace.dependencies]
+clap = { version = "4.5", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.10"
+thiserror = "2.0"
+unicode-normalization = "0.1"
+zstd = "0.13"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+all = "warn"
+pedantic = "warn"

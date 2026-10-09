@@ -1,0 +1,11 @@
+{
+  "fixture_id": "PF06",
+  "version": 1,
+  "kind": "NESTED_BASIN_CONTRACT",
+  "expected": {
+    "equal_thresholds_preserved": true,
+    "multiple_outlets_preserved": true,
+    "nested_capacity_double_count": false
+  }
+}
+
